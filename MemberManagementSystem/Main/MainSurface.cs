@@ -22,7 +22,7 @@ namespace MemberManagementSystem.Main
 
         private void user_manage_btn_Click(object sender, EventArgs e)
         {
-            //user_manage_pan.BringToFront();
+            user_manage_pan.BringToFront();
         }
 
         private void goods_manage_btn_Click(object sender, EventArgs e)
