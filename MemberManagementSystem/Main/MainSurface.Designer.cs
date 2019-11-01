@@ -36,31 +36,31 @@
             this.goods_manage_btn = new System.Windows.Forms.Button();
             this.user_manage_btn = new System.Windows.Forms.Button();
             this.user_manage_gpb = new System.Windows.Forms.GroupBox();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.set_rank = new System.Windows.Forms.Button();
+            this.bat_create_card_btn = new System.Windows.Forms.Button();
+            this.import_info_btn = new System.Windows.Forms.Button();
+            this.user_charge_count_btn = new System.Windows.Forms.Button();
+            this.user_charge_btn = new System.Windows.Forms.Button();
+            this.user_list_btn = new System.Windows.Forms.Button();
+            this.create_user_btn = new System.Windows.Forms.Button();
             this.user_manage_pan = new System.Windows.Forms.Panel();
             this.user_consume_pan = new System.Windows.Forms.Panel();
             this.user_consume_gpb = new System.Windows.Forms.GroupBox();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
-            this.button21 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
+            this.consume_return_btn = new System.Windows.Forms.Button();
+            this.consume_history_btn = new System.Windows.Forms.Button();
+            this.fast_consume_btn = new System.Windows.Forms.Button();
+            this.consume_count_btn = new System.Windows.Forms.Button();
+            this.consume_goods_btn = new System.Windows.Forms.Button();
             this.goods_manage_pan = new System.Windows.Forms.Panel();
             this.goods_manage_gpb = new System.Windows.Forms.GroupBox();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
+            this.bat_import_goods_btn = new System.Windows.Forms.Button();
+            this.supplier_manage_btn = new System.Windows.Forms.Button();
+            this.set_goods_type_btn = new System.Windows.Forms.Button();
+            this.purchase_return_btn = new System.Windows.Forms.Button();
+            this.view_stock_btn = new System.Windows.Forms.Button();
+            this.package_list_btn = new System.Windows.Forms.Button();
+            this.goods_list_btn = new System.Windows.Forms.Button();
+            this.create_goods_btn = new System.Windows.Forms.Button();
             this.sys_settings_pan = new System.Windows.Forms.Panel();
             this.sys_settings_gpb = new System.Windows.Forms.GroupBox();
             this.button28 = new System.Windows.Forms.Button();
@@ -158,13 +158,13 @@
             this.user_manage_gpb.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.user_manage_gpb.Controls.Add(this.button13);
-            this.user_manage_gpb.Controls.Add(this.button10);
-            this.user_manage_gpb.Controls.Add(this.button11);
-            this.user_manage_gpb.Controls.Add(this.button8);
-            this.user_manage_gpb.Controls.Add(this.button9);
-            this.user_manage_gpb.Controls.Add(this.button7);
-            this.user_manage_gpb.Controls.Add(this.button6);
+            this.user_manage_gpb.Controls.Add(this.set_rank);
+            this.user_manage_gpb.Controls.Add(this.bat_create_card_btn);
+            this.user_manage_gpb.Controls.Add(this.import_info_btn);
+            this.user_manage_gpb.Controls.Add(this.user_charge_count_btn);
+            this.user_manage_gpb.Controls.Add(this.user_charge_btn);
+            this.user_manage_gpb.Controls.Add(this.user_list_btn);
+            this.user_manage_gpb.Controls.Add(this.create_user_btn);
             this.user_manage_gpb.Font = new System.Drawing.Font("宋体", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.user_manage_gpb.Location = new System.Drawing.Point(0, 19);
             this.user_manage_gpb.Name = "user_manage_gpb";
@@ -173,131 +173,138 @@
             this.user_manage_gpb.TabStop = false;
             this.user_manage_gpb.Tag = "19";
             // 
-            // button13
+            // set_rank
             // 
-            this.button13.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button13.BackColor = System.Drawing.SystemColors.Control;
-            this.button13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button13.BackgroundImage")));
-            this.button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button13.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button13.FlatAppearance.BorderSize = 0;
-            this.button13.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.button13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Location = new System.Drawing.Point(101, 620);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(400, 80);
-            this.button13.TabIndex = 6;
-            this.button13.Tag = "30";
-            this.button13.UseVisualStyleBackColor = false;
+            this.set_rank.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.set_rank.BackColor = System.Drawing.SystemColors.Control;
+            this.set_rank.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("set_rank.BackgroundImage")));
+            this.set_rank.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.set_rank.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.set_rank.FlatAppearance.BorderSize = 0;
+            this.set_rank.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.set_rank.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.set_rank.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.set_rank.Location = new System.Drawing.Point(101, 620);
+            this.set_rank.Name = "set_rank";
+            this.set_rank.Size = new System.Drawing.Size(400, 80);
+            this.set_rank.TabIndex = 6;
+            this.set_rank.Tag = "30";
+            this.set_rank.UseVisualStyleBackColor = false;
+            this.set_rank.Click += new System.EventHandler(this.set_rank_Click);
             // 
-            // button10
+            // bat_create_card_btn
             // 
-            this.button10.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button10.BackColor = System.Drawing.SystemColors.Control;
-            this.button10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button10.BackgroundImage")));
-            this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button10.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.button10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Location = new System.Drawing.Point(529, 434);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(400, 80);
-            this.button10.TabIndex = 5;
-            this.button10.Tag = "29";
-            this.button10.UseVisualStyleBackColor = false;
+            this.bat_create_card_btn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.bat_create_card_btn.BackColor = System.Drawing.SystemColors.Control;
+            this.bat_create_card_btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bat_create_card_btn.BackgroundImage")));
+            this.bat_create_card_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.bat_create_card_btn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.bat_create_card_btn.FlatAppearance.BorderSize = 0;
+            this.bat_create_card_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.bat_create_card_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.bat_create_card_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bat_create_card_btn.Location = new System.Drawing.Point(529, 434);
+            this.bat_create_card_btn.Name = "bat_create_card_btn";
+            this.bat_create_card_btn.Size = new System.Drawing.Size(400, 80);
+            this.bat_create_card_btn.TabIndex = 5;
+            this.bat_create_card_btn.Tag = "29";
+            this.bat_create_card_btn.UseVisualStyleBackColor = false;
+            this.bat_create_card_btn.Click += new System.EventHandler(this.bat_create_card_btn_Click);
             // 
-            // button11
+            // import_info_btn
             // 
-            this.button11.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button11.BackColor = System.Drawing.SystemColors.Control;
-            this.button11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button11.BackgroundImage")));
-            this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button11.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.button11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Location = new System.Drawing.Point(101, 434);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(400, 80);
-            this.button11.TabIndex = 4;
-            this.button11.Tag = "28";
-            this.button11.UseVisualStyleBackColor = false;
+            this.import_info_btn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.import_info_btn.BackColor = System.Drawing.SystemColors.Control;
+            this.import_info_btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("import_info_btn.BackgroundImage")));
+            this.import_info_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.import_info_btn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.import_info_btn.FlatAppearance.BorderSize = 0;
+            this.import_info_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.import_info_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.import_info_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.import_info_btn.Location = new System.Drawing.Point(101, 434);
+            this.import_info_btn.Name = "import_info_btn";
+            this.import_info_btn.Size = new System.Drawing.Size(400, 80);
+            this.import_info_btn.TabIndex = 4;
+            this.import_info_btn.Tag = "28";
+            this.import_info_btn.UseVisualStyleBackColor = false;
+            this.import_info_btn.Click += new System.EventHandler(this.import_info_btn_Click);
             // 
-            // button8
+            // user_charge_count_btn
             // 
-            this.button8.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button8.BackColor = System.Drawing.SystemColors.Control;
-            this.button8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button8.BackgroundImage")));
-            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button8.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Location = new System.Drawing.Point(529, 259);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(400, 80);
-            this.button8.TabIndex = 3;
-            this.button8.Tag = "27";
-            this.button8.UseVisualStyleBackColor = false;
+            this.user_charge_count_btn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.user_charge_count_btn.BackColor = System.Drawing.SystemColors.Control;
+            this.user_charge_count_btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("user_charge_count_btn.BackgroundImage")));
+            this.user_charge_count_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.user_charge_count_btn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.user_charge_count_btn.FlatAppearance.BorderSize = 0;
+            this.user_charge_count_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.user_charge_count_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.user_charge_count_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.user_charge_count_btn.Location = new System.Drawing.Point(529, 259);
+            this.user_charge_count_btn.Name = "user_charge_count_btn";
+            this.user_charge_count_btn.Size = new System.Drawing.Size(400, 80);
+            this.user_charge_count_btn.TabIndex = 3;
+            this.user_charge_count_btn.Tag = "27";
+            this.user_charge_count_btn.UseVisualStyleBackColor = false;
+            this.user_charge_count_btn.Click += new System.EventHandler(this.user_charge_count_btn_Click);
             // 
-            // button9
+            // user_charge_btn
             // 
-            this.button9.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button9.BackColor = System.Drawing.SystemColors.Control;
-            this.button9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button9.BackgroundImage")));
-            this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button9.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Location = new System.Drawing.Point(101, 259);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(400, 80);
-            this.button9.TabIndex = 2;
-            this.button9.Tag = "26";
-            this.button9.UseVisualStyleBackColor = false;
+            this.user_charge_btn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.user_charge_btn.BackColor = System.Drawing.SystemColors.Control;
+            this.user_charge_btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("user_charge_btn.BackgroundImage")));
+            this.user_charge_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.user_charge_btn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.user_charge_btn.FlatAppearance.BorderSize = 0;
+            this.user_charge_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.user_charge_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.user_charge_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.user_charge_btn.Location = new System.Drawing.Point(101, 259);
+            this.user_charge_btn.Name = "user_charge_btn";
+            this.user_charge_btn.Size = new System.Drawing.Size(400, 80);
+            this.user_charge_btn.TabIndex = 2;
+            this.user_charge_btn.Tag = "26";
+            this.user_charge_btn.UseVisualStyleBackColor = false;
+            this.user_charge_btn.Click += new System.EventHandler(this.user_charge_btn_Click);
             // 
-            // button7
+            // user_list_btn
             // 
-            this.button7.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button7.BackColor = System.Drawing.SystemColors.Control;
-            this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
-            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button7.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Location = new System.Drawing.Point(529, 100);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(400, 80);
-            this.button7.TabIndex = 1;
-            this.button7.Tag = "25";
-            this.button7.UseVisualStyleBackColor = false;
+            this.user_list_btn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.user_list_btn.BackColor = System.Drawing.SystemColors.Control;
+            this.user_list_btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("user_list_btn.BackgroundImage")));
+            this.user_list_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.user_list_btn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.user_list_btn.FlatAppearance.BorderSize = 0;
+            this.user_list_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.user_list_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.user_list_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.user_list_btn.Location = new System.Drawing.Point(529, 100);
+            this.user_list_btn.Name = "user_list_btn";
+            this.user_list_btn.Size = new System.Drawing.Size(400, 80);
+            this.user_list_btn.TabIndex = 1;
+            this.user_list_btn.Tag = "25";
+            this.user_list_btn.UseVisualStyleBackColor = false;
+            this.user_list_btn.Click += new System.EventHandler(this.user_list_btn_Click);
             // 
-            // button6
+            // create_user_btn
             // 
-            this.button6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button6.BackColor = System.Drawing.SystemColors.Control;
-            this.button6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button6.BackgroundImage")));
-            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Location = new System.Drawing.Point(101, 100);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(400, 80);
-            this.button6.TabIndex = 0;
-            this.button6.Tag = "24";
-            this.button6.UseVisualStyleBackColor = false;
+            this.create_user_btn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.create_user_btn.BackColor = System.Drawing.SystemColors.Control;
+            this.create_user_btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("create_user_btn.BackgroundImage")));
+            this.create_user_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.create_user_btn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.create_user_btn.FlatAppearance.BorderSize = 0;
+            this.create_user_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.create_user_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.create_user_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.create_user_btn.Location = new System.Drawing.Point(101, 100);
+            this.create_user_btn.Name = "create_user_btn";
+            this.create_user_btn.Size = new System.Drawing.Size(400, 80);
+            this.create_user_btn.TabIndex = 0;
+            this.create_user_btn.Tag = "24";
+            this.create_user_btn.UseVisualStyleBackColor = false;
+            this.create_user_btn.Click += new System.EventHandler(this.create_user_btn_Click);
             // 
             // user_manage_pan
             // 
@@ -326,11 +333,11 @@
             this.user_consume_gpb.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.user_consume_gpb.Controls.Add(this.button18);
-            this.user_consume_gpb.Controls.Add(this.button19);
-            this.user_consume_gpb.Controls.Add(this.button20);
-            this.user_consume_gpb.Controls.Add(this.button21);
-            this.user_consume_gpb.Controls.Add(this.button22);
+            this.user_consume_gpb.Controls.Add(this.consume_return_btn);
+            this.user_consume_gpb.Controls.Add(this.consume_history_btn);
+            this.user_consume_gpb.Controls.Add(this.fast_consume_btn);
+            this.user_consume_gpb.Controls.Add(this.consume_count_btn);
+            this.user_consume_gpb.Controls.Add(this.consume_goods_btn);
             this.user_consume_gpb.Font = new System.Drawing.Font("宋体", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.user_consume_gpb.Location = new System.Drawing.Point(0, 19);
             this.user_consume_gpb.Name = "user_consume_gpb";
@@ -339,95 +346,100 @@
             this.user_consume_gpb.TabStop = false;
             this.user_consume_gpb.Tag = "21";
             // 
-            // button18
+            // consume_return_btn
             // 
-            this.button18.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button18.BackColor = System.Drawing.SystemColors.Control;
-            this.button18.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button18.BackgroundImage")));
-            this.button18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button18.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button18.FlatAppearance.BorderSize = 0;
-            this.button18.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.button18.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button18.Location = new System.Drawing.Point(101, 434);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(400, 80);
-            this.button18.TabIndex = 4;
-            this.button18.Tag = "43";
-            this.button18.UseVisualStyleBackColor = false;
+            this.consume_return_btn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.consume_return_btn.BackColor = System.Drawing.SystemColors.Control;
+            this.consume_return_btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("consume_return_btn.BackgroundImage")));
+            this.consume_return_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.consume_return_btn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.consume_return_btn.FlatAppearance.BorderSize = 0;
+            this.consume_return_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.consume_return_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.consume_return_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.consume_return_btn.Location = new System.Drawing.Point(101, 434);
+            this.consume_return_btn.Name = "consume_return_btn";
+            this.consume_return_btn.Size = new System.Drawing.Size(400, 80);
+            this.consume_return_btn.TabIndex = 4;
+            this.consume_return_btn.Tag = "43";
+            this.consume_return_btn.UseVisualStyleBackColor = false;
+            this.consume_return_btn.Click += new System.EventHandler(this.consume_return_btn_Click);
             // 
-            // button19
+            // consume_history_btn
             // 
-            this.button19.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button19.BackColor = System.Drawing.SystemColors.Control;
-            this.button19.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button19.BackgroundImage")));
-            this.button19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button19.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button19.FlatAppearance.BorderSize = 0;
-            this.button19.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.button19.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button19.Location = new System.Drawing.Point(529, 259);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(400, 80);
-            this.button19.TabIndex = 3;
-            this.button19.Tag = "42";
-            this.button19.UseVisualStyleBackColor = false;
+            this.consume_history_btn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.consume_history_btn.BackColor = System.Drawing.SystemColors.Control;
+            this.consume_history_btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("consume_history_btn.BackgroundImage")));
+            this.consume_history_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.consume_history_btn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.consume_history_btn.FlatAppearance.BorderSize = 0;
+            this.consume_history_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.consume_history_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.consume_history_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.consume_history_btn.Location = new System.Drawing.Point(529, 259);
+            this.consume_history_btn.Name = "consume_history_btn";
+            this.consume_history_btn.Size = new System.Drawing.Size(400, 80);
+            this.consume_history_btn.TabIndex = 3;
+            this.consume_history_btn.Tag = "42";
+            this.consume_history_btn.UseVisualStyleBackColor = false;
+            this.consume_history_btn.Click += new System.EventHandler(this.consume_history_btn_Click);
             // 
-            // button20
+            // fast_consume_btn
             // 
-            this.button20.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button20.BackColor = System.Drawing.SystemColors.Control;
-            this.button20.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button20.BackgroundImage")));
-            this.button20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button20.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button20.FlatAppearance.BorderSize = 0;
-            this.button20.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.button20.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button20.Location = new System.Drawing.Point(101, 259);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(400, 80);
-            this.button20.TabIndex = 2;
-            this.button20.Tag = "41";
-            this.button20.UseVisualStyleBackColor = false;
+            this.fast_consume_btn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.fast_consume_btn.BackColor = System.Drawing.SystemColors.Control;
+            this.fast_consume_btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("fast_consume_btn.BackgroundImage")));
+            this.fast_consume_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.fast_consume_btn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.fast_consume_btn.FlatAppearance.BorderSize = 0;
+            this.fast_consume_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.fast_consume_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.fast_consume_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.fast_consume_btn.Location = new System.Drawing.Point(101, 259);
+            this.fast_consume_btn.Name = "fast_consume_btn";
+            this.fast_consume_btn.Size = new System.Drawing.Size(400, 80);
+            this.fast_consume_btn.TabIndex = 2;
+            this.fast_consume_btn.Tag = "41";
+            this.fast_consume_btn.UseVisualStyleBackColor = false;
+            this.fast_consume_btn.Click += new System.EventHandler(this.fast_consume_btn_Click);
             // 
-            // button21
+            // consume_count_btn
             // 
-            this.button21.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button21.BackColor = System.Drawing.SystemColors.Control;
-            this.button21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button21.BackgroundImage")));
-            this.button21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button21.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button21.FlatAppearance.BorderSize = 0;
-            this.button21.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.button21.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button21.Location = new System.Drawing.Point(529, 100);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(400, 80);
-            this.button21.TabIndex = 1;
-            this.button21.Tag = "40";
-            this.button21.UseVisualStyleBackColor = false;
+            this.consume_count_btn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.consume_count_btn.BackColor = System.Drawing.SystemColors.Control;
+            this.consume_count_btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("consume_count_btn.BackgroundImage")));
+            this.consume_count_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.consume_count_btn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.consume_count_btn.FlatAppearance.BorderSize = 0;
+            this.consume_count_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.consume_count_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.consume_count_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.consume_count_btn.Location = new System.Drawing.Point(529, 100);
+            this.consume_count_btn.Name = "consume_count_btn";
+            this.consume_count_btn.Size = new System.Drawing.Size(400, 80);
+            this.consume_count_btn.TabIndex = 1;
+            this.consume_count_btn.Tag = "40";
+            this.consume_count_btn.UseVisualStyleBackColor = false;
+            this.consume_count_btn.Click += new System.EventHandler(this.consume_count_btn_Click);
             // 
-            // button22
+            // consume_goods_btn
             // 
-            this.button22.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button22.BackColor = System.Drawing.SystemColors.Control;
-            this.button22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button22.BackgroundImage")));
-            this.button22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button22.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button22.FlatAppearance.BorderSize = 0;
-            this.button22.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.button22.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button22.Location = new System.Drawing.Point(101, 100);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(400, 80);
-            this.button22.TabIndex = 0;
-            this.button22.Tag = "39";
-            this.button22.UseVisualStyleBackColor = false;
+            this.consume_goods_btn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.consume_goods_btn.BackColor = System.Drawing.SystemColors.Control;
+            this.consume_goods_btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("consume_goods_btn.BackgroundImage")));
+            this.consume_goods_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.consume_goods_btn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.consume_goods_btn.FlatAppearance.BorderSize = 0;
+            this.consume_goods_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.consume_goods_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.consume_goods_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.consume_goods_btn.Location = new System.Drawing.Point(101, 100);
+            this.consume_goods_btn.Name = "consume_goods_btn";
+            this.consume_goods_btn.Size = new System.Drawing.Size(400, 80);
+            this.consume_goods_btn.TabIndex = 0;
+            this.consume_goods_btn.Tag = "39";
+            this.consume_goods_btn.UseVisualStyleBackColor = false;
+            this.consume_goods_btn.Click += new System.EventHandler(this.consume_goods_btn_Click);
             // 
             // goods_manage_pan
             // 
@@ -445,14 +457,14 @@
             this.goods_manage_gpb.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.goods_manage_gpb.Controls.Add(this.button15);
-            this.goods_manage_gpb.Controls.Add(this.button1);
-            this.goods_manage_gpb.Controls.Add(this.button2);
-            this.goods_manage_gpb.Controls.Add(this.button3);
-            this.goods_manage_gpb.Controls.Add(this.button4);
-            this.goods_manage_gpb.Controls.Add(this.button5);
-            this.goods_manage_gpb.Controls.Add(this.button12);
-            this.goods_manage_gpb.Controls.Add(this.button14);
+            this.goods_manage_gpb.Controls.Add(this.bat_import_goods_btn);
+            this.goods_manage_gpb.Controls.Add(this.supplier_manage_btn);
+            this.goods_manage_gpb.Controls.Add(this.set_goods_type_btn);
+            this.goods_manage_gpb.Controls.Add(this.purchase_return_btn);
+            this.goods_manage_gpb.Controls.Add(this.view_stock_btn);
+            this.goods_manage_gpb.Controls.Add(this.package_list_btn);
+            this.goods_manage_gpb.Controls.Add(this.goods_list_btn);
+            this.goods_manage_gpb.Controls.Add(this.create_goods_btn);
             this.goods_manage_gpb.Font = new System.Drawing.Font("宋体", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.goods_manage_gpb.Location = new System.Drawing.Point(0, 19);
             this.goods_manage_gpb.Name = "goods_manage_gpb";
@@ -461,149 +473,157 @@
             this.goods_manage_gpb.TabStop = false;
             this.goods_manage_gpb.Tag = "20";
             // 
-            // button15
+            // bat_import_goods_btn
             // 
-            this.button15.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button15.BackColor = System.Drawing.SystemColors.Control;
-            this.button15.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button15.BackgroundImage")));
-            this.button15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button15.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button15.FlatAppearance.BorderSize = 0;
-            this.button15.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.button15.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button15.Location = new System.Drawing.Point(529, 620);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(400, 80);
-            this.button15.TabIndex = 7;
-            this.button15.Tag = "38";
-            this.button15.UseVisualStyleBackColor = false;
+            this.bat_import_goods_btn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.bat_import_goods_btn.BackColor = System.Drawing.SystemColors.Control;
+            this.bat_import_goods_btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bat_import_goods_btn.BackgroundImage")));
+            this.bat_import_goods_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.bat_import_goods_btn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.bat_import_goods_btn.FlatAppearance.BorderSize = 0;
+            this.bat_import_goods_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.bat_import_goods_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.bat_import_goods_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bat_import_goods_btn.Location = new System.Drawing.Point(529, 620);
+            this.bat_import_goods_btn.Name = "bat_import_goods_btn";
+            this.bat_import_goods_btn.Size = new System.Drawing.Size(400, 80);
+            this.bat_import_goods_btn.TabIndex = 7;
+            this.bat_import_goods_btn.Tag = "38";
+            this.bat_import_goods_btn.UseVisualStyleBackColor = false;
+            this.bat_import_goods_btn.Click += new System.EventHandler(this.bat_import_goods_btn_Click);
             // 
-            // button1
+            // supplier_manage_btn
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button1.BackColor = System.Drawing.SystemColors.Control;
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(101, 620);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(400, 80);
-            this.button1.TabIndex = 6;
-            this.button1.Tag = "37";
-            this.button1.UseVisualStyleBackColor = false;
+            this.supplier_manage_btn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.supplier_manage_btn.BackColor = System.Drawing.SystemColors.Control;
+            this.supplier_manage_btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("supplier_manage_btn.BackgroundImage")));
+            this.supplier_manage_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.supplier_manage_btn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.supplier_manage_btn.FlatAppearance.BorderSize = 0;
+            this.supplier_manage_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.supplier_manage_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.supplier_manage_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.supplier_manage_btn.Location = new System.Drawing.Point(101, 620);
+            this.supplier_manage_btn.Name = "supplier_manage_btn";
+            this.supplier_manage_btn.Size = new System.Drawing.Size(400, 80);
+            this.supplier_manage_btn.TabIndex = 6;
+            this.supplier_manage_btn.Tag = "37";
+            this.supplier_manage_btn.UseVisualStyleBackColor = false;
+            this.supplier_manage_btn.Click += new System.EventHandler(this.supplier_manage_btn_Click);
             // 
-            // button2
+            // set_goods_type_btn
             // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button2.BackColor = System.Drawing.SystemColors.Control;
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(529, 434);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(400, 80);
-            this.button2.TabIndex = 5;
-            this.button2.Tag = "36";
-            this.button2.UseVisualStyleBackColor = false;
+            this.set_goods_type_btn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.set_goods_type_btn.BackColor = System.Drawing.SystemColors.Control;
+            this.set_goods_type_btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("set_goods_type_btn.BackgroundImage")));
+            this.set_goods_type_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.set_goods_type_btn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.set_goods_type_btn.FlatAppearance.BorderSize = 0;
+            this.set_goods_type_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.set_goods_type_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.set_goods_type_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.set_goods_type_btn.Location = new System.Drawing.Point(529, 434);
+            this.set_goods_type_btn.Name = "set_goods_type_btn";
+            this.set_goods_type_btn.Size = new System.Drawing.Size(400, 80);
+            this.set_goods_type_btn.TabIndex = 5;
+            this.set_goods_type_btn.Tag = "36";
+            this.set_goods_type_btn.UseVisualStyleBackColor = false;
+            this.set_goods_type_btn.Click += new System.EventHandler(this.set_goods_type_btn_Click);
             // 
-            // button3
+            // purchase_return_btn
             // 
-            this.button3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button3.BackColor = System.Drawing.SystemColors.Control;
-            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(101, 434);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(400, 80);
-            this.button3.TabIndex = 4;
-            this.button3.Tag = "35";
-            this.button3.UseVisualStyleBackColor = false;
+            this.purchase_return_btn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.purchase_return_btn.BackColor = System.Drawing.SystemColors.Control;
+            this.purchase_return_btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("purchase_return_btn.BackgroundImage")));
+            this.purchase_return_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.purchase_return_btn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.purchase_return_btn.FlatAppearance.BorderSize = 0;
+            this.purchase_return_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.purchase_return_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.purchase_return_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.purchase_return_btn.Location = new System.Drawing.Point(101, 434);
+            this.purchase_return_btn.Name = "purchase_return_btn";
+            this.purchase_return_btn.Size = new System.Drawing.Size(400, 80);
+            this.purchase_return_btn.TabIndex = 4;
+            this.purchase_return_btn.Tag = "35";
+            this.purchase_return_btn.UseVisualStyleBackColor = false;
+            this.purchase_return_btn.Click += new System.EventHandler(this.purchase_return_btn_Click);
             // 
-            // button4
+            // view_stock_btn
             // 
-            this.button4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button4.BackColor = System.Drawing.SystemColors.Control;
-            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(529, 259);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(400, 80);
-            this.button4.TabIndex = 3;
-            this.button4.Tag = "34";
-            this.button4.UseVisualStyleBackColor = false;
+            this.view_stock_btn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.view_stock_btn.BackColor = System.Drawing.SystemColors.Control;
+            this.view_stock_btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("view_stock_btn.BackgroundImage")));
+            this.view_stock_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.view_stock_btn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.view_stock_btn.FlatAppearance.BorderSize = 0;
+            this.view_stock_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.view_stock_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.view_stock_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.view_stock_btn.Location = new System.Drawing.Point(529, 259);
+            this.view_stock_btn.Name = "view_stock_btn";
+            this.view_stock_btn.Size = new System.Drawing.Size(400, 80);
+            this.view_stock_btn.TabIndex = 3;
+            this.view_stock_btn.Tag = "34";
+            this.view_stock_btn.UseVisualStyleBackColor = false;
+            this.view_stock_btn.Click += new System.EventHandler(this.view_stock_btn_Click);
             // 
-            // button5
+            // package_list_btn
             // 
-            this.button5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button5.BackColor = System.Drawing.SystemColors.Control;
-            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(101, 259);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(400, 80);
-            this.button5.TabIndex = 2;
-            this.button5.Tag = "33";
-            this.button5.UseVisualStyleBackColor = false;
+            this.package_list_btn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.package_list_btn.BackColor = System.Drawing.SystemColors.Control;
+            this.package_list_btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("package_list_btn.BackgroundImage")));
+            this.package_list_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.package_list_btn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.package_list_btn.FlatAppearance.BorderSize = 0;
+            this.package_list_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.package_list_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.package_list_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.package_list_btn.Location = new System.Drawing.Point(101, 259);
+            this.package_list_btn.Name = "package_list_btn";
+            this.package_list_btn.Size = new System.Drawing.Size(400, 80);
+            this.package_list_btn.TabIndex = 2;
+            this.package_list_btn.Tag = "33";
+            this.package_list_btn.UseVisualStyleBackColor = false;
+            this.package_list_btn.Click += new System.EventHandler(this.package_list_btn_Click);
             // 
-            // button12
+            // goods_list_btn
             // 
-            this.button12.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button12.BackColor = System.Drawing.SystemColors.Control;
-            this.button12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button12.BackgroundImage")));
-            this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button12.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button12.FlatAppearance.BorderSize = 0;
-            this.button12.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.button12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Location = new System.Drawing.Point(529, 100);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(400, 80);
-            this.button12.TabIndex = 1;
-            this.button12.Tag = "32";
-            this.button12.UseVisualStyleBackColor = false;
+            this.goods_list_btn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.goods_list_btn.BackColor = System.Drawing.SystemColors.Control;
+            this.goods_list_btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("goods_list_btn.BackgroundImage")));
+            this.goods_list_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.goods_list_btn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.goods_list_btn.FlatAppearance.BorderSize = 0;
+            this.goods_list_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.goods_list_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.goods_list_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.goods_list_btn.Location = new System.Drawing.Point(529, 100);
+            this.goods_list_btn.Name = "goods_list_btn";
+            this.goods_list_btn.Size = new System.Drawing.Size(400, 80);
+            this.goods_list_btn.TabIndex = 1;
+            this.goods_list_btn.Tag = "32";
+            this.goods_list_btn.UseVisualStyleBackColor = false;
+            this.goods_list_btn.Click += new System.EventHandler(this.goods_list_btn_Click);
             // 
-            // button14
+            // create_goods_btn
             // 
-            this.button14.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button14.BackColor = System.Drawing.SystemColors.Control;
-            this.button14.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button14.BackgroundImage")));
-            this.button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button14.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button14.FlatAppearance.BorderSize = 0;
-            this.button14.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.button14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Location = new System.Drawing.Point(101, 100);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(400, 80);
-            this.button14.TabIndex = 0;
-            this.button14.Tag = "31";
-            this.button14.UseVisualStyleBackColor = false;
+            this.create_goods_btn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.create_goods_btn.BackColor = System.Drawing.SystemColors.Control;
+            this.create_goods_btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("create_goods_btn.BackgroundImage")));
+            this.create_goods_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.create_goods_btn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.create_goods_btn.FlatAppearance.BorderSize = 0;
+            this.create_goods_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.create_goods_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.create_goods_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.create_goods_btn.Location = new System.Drawing.Point(101, 100);
+            this.create_goods_btn.Name = "create_goods_btn";
+            this.create_goods_btn.Size = new System.Drawing.Size(400, 80);
+            this.create_goods_btn.TabIndex = 0;
+            this.create_goods_btn.Tag = "31";
+            this.create_goods_btn.UseVisualStyleBackColor = false;
+            this.create_goods_btn.Click += new System.EventHandler(this.create_goods_btn_Click);
             // 
             // sys_settings_pan
             // 
@@ -778,8 +798,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1378, 844);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.user_manage_pan);
             this.Controls.Add(this.func_list_gpb);
+            this.Controls.Add(this.user_manage_pan);
             this.Controls.Add(this.sys_settings_pan);
             this.Controls.Add(this.stat_report_pan);
             this.Controls.Add(this.goods_manage_pan);
@@ -813,31 +833,31 @@
         private System.Windows.Forms.Button stat_report_btn;
         private System.Windows.Forms.Button sys_settings_btn;
         private System.Windows.Forms.GroupBox user_manage_gpb;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button set_rank;
+        private System.Windows.Forms.Button bat_create_card_btn;
+        private System.Windows.Forms.Button import_info_btn;
+        private System.Windows.Forms.Button user_charge_count_btn;
+        private System.Windows.Forms.Button user_charge_btn;
+        private System.Windows.Forms.Button user_list_btn;
+        private System.Windows.Forms.Button create_user_btn;
         private System.Windows.Forms.Panel user_manage_pan;
         private System.Windows.Forms.Panel goods_manage_pan;
         private System.Windows.Forms.GroupBox goods_manage_gpb;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button supplier_manage_btn;
+        private System.Windows.Forms.Button set_goods_type_btn;
+        private System.Windows.Forms.Button purchase_return_btn;
+        private System.Windows.Forms.Button view_stock_btn;
+        private System.Windows.Forms.Button package_list_btn;
+        private System.Windows.Forms.Button goods_list_btn;
+        private System.Windows.Forms.Button create_goods_btn;
+        private System.Windows.Forms.Button bat_import_goods_btn;
         private System.Windows.Forms.Panel user_consume_pan;
         private System.Windows.Forms.GroupBox user_consume_gpb;
-        private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Button button19;
-        private System.Windows.Forms.Button button20;
-        private System.Windows.Forms.Button button21;
-        private System.Windows.Forms.Button button22;
+        private System.Windows.Forms.Button consume_return_btn;
+        private System.Windows.Forms.Button consume_history_btn;
+        private System.Windows.Forms.Button fast_consume_btn;
+        private System.Windows.Forms.Button consume_count_btn;
+        private System.Windows.Forms.Button consume_goods_btn;
         private System.Windows.Forms.Panel sys_settings_pan;
         private System.Windows.Forms.GroupBox sys_settings_gpb;
         private System.Windows.Forms.Button button28;

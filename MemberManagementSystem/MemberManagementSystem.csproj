@@ -47,6 +47,54 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GoodsManage\BatImportGoods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoodsManage\BatImportGoods.Designer.cs">
+      <DependentUpon>BatImportGoods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsManage\CreateGoods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoodsManage\CreateGoods.Designer.cs">
+      <DependentUpon>CreateGoods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsManage\GoodsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoodsManage\GoodsList.Designer.cs">
+      <DependentUpon>GoodsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsManage\PackageList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoodsManage\PackageList.Designer.cs">
+      <DependentUpon>PackageList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsManage\PurchaseReturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoodsManage\PurchaseReturn.Designer.cs">
+      <DependentUpon>PurchaseReturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsManage\SetGoodsType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoodsManage\SetGoodsType.Designer.cs">
+      <DependentUpon>SetGoodsType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsManage\SupplierManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoodsManage\SupplierManage.Designer.cs">
+      <DependentUpon>SupplierManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsManage\ViewStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoodsManage\ViewStock.Designer.cs">
+      <DependentUpon>ViewStock.cs</DependentUpon>
+    </Compile>
     <Compile Include="Init\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +121,78 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserConsume\ConsumeCount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserConsume\ConsumeCount.Designer.cs">
+      <DependentUpon>ConsumeCount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserConsume\ConsumeGoods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserConsume\ConsumeGoods.Designer.cs">
+      <DependentUpon>ConsumeGoods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserConsume\ConsumeHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserConsume\ConsumeHistory.Designer.cs">
+      <DependentUpon>ConsumeHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserConsume\ConsumeReturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserConsume\ConsumeReturn.Designer.cs">
+      <DependentUpon>ConsumeReturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserConsume\FastConsume.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserConsume\FastConsume.Designer.cs">
+      <DependentUpon>FastConsume.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserManage\BatCreateCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManage\BatCreateCard.Designer.cs">
+      <DependentUpon>BatCreateCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserManage\CreateUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManage\CreateUser.Designer.cs">
+      <DependentUpon>CreateUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserManage\ImportInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManage\ImportInfo.Designer.cs">
+      <DependentUpon>ImportInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserManage\SetRank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManage\SetRank.Designer.cs">
+      <DependentUpon>SetRank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserManage\UserCharge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManage\UserCharge.Designer.cs">
+      <DependentUpon>UserCharge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserManage\UserChargeCount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManage\UserChargeCount.Designer.cs">
+      <DependentUpon>UserChargeCount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserManage\UserList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManage\UserList.Designer.cs">
+      <DependentUpon>UserList.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Init\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -95,6 +215,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UserManage\CreateUser.resx">
+      <DependentUpon>CreateUser.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -108,5 +231,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
