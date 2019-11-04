@@ -95,5 +95,30 @@ namespace MemberManagementSystem.Init
             }
         }
 
+        public static void LimitInput(object sender,KeyPressEventArgs e,int is_allow_negative)
+        {
+            if (e.KeyChar == 0x20) e.KeyChar = (char)0; //禁止空格键
+            if (is_allow_negative == 0)
+            {
+                 if(e.KeyChar == 0x2D) e.KeyChar = (char)0;  //禁止负数
+            }
+            else
+            {
+                if ((e.KeyChar == 0x2D) && (((TextBox)sender).Text.Length == 0)) return;   //允许负数
+            }
+
+            if (e.KeyChar > 0x20)
+            {
+                try
+                {
+                    double.Parse(((TextBox)sender).Text + e.KeyChar.ToString());
+                }
+                catch
+                {
+                    e.KeyChar = (char)0;   //处理非法字符
+                }
+            }
+        }
+
     }
 }
