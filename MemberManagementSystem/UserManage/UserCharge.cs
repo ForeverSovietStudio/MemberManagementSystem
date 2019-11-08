@@ -49,11 +49,11 @@ namespace MemberManagementSystem.UserManage
 
             if (charge_balance_txb.Text != "" && charge_num_txb.Text != "")
             {
-                sql += "balance = balance + '" + double.Parse(charge_balance_txb.Text) + "',total_num = total_num + '" + charge_num_txb.Text + "'";
+                sql += "balance = balance + '" + Double.Parse(charge_balance_txb.Text) + "',total_num = total_num + '" + charge_num_txb.Text + "'";
             }
             else if (charge_balance_txb.Text != "")
             {
-                sql += "balance = balance + '" + double.Parse(charge_balance_txb.Text) + "' ";
+                sql += "balance = balance + '" + Double.Parse(charge_balance_txb.Text) + "' ";
             }
             else if (charge_num_txb.Text != "")
             {
