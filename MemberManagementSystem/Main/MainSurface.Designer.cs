@@ -39,8 +39,6 @@
             this.set_rank = new System.Windows.Forms.Button();
             this.bat_create_card_btn = new System.Windows.Forms.Button();
             this.import_info_btn = new System.Windows.Forms.Button();
-            this.user_charge_count_btn = new System.Windows.Forms.Button();
-            this.user_charge_btn = new System.Windows.Forms.Button();
             this.user_list_btn = new System.Windows.Forms.Button();
             this.create_user_btn = new System.Windows.Forms.Button();
             this.user_manage_pan = new System.Windows.Forms.Panel();
@@ -87,9 +85,8 @@
             // 
             // func_list_gpb
             // 
-            this.func_list_gpb.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.func_list_gpb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.func_list_gpb.Controls.Add(this.sys_settings_btn);
             this.func_list_gpb.Controls.Add(this.stat_report_btn);
             this.func_list_gpb.Controls.Add(this.user_consume_btn);
@@ -161,8 +158,6 @@
             this.user_manage_gpb.Controls.Add(this.set_rank);
             this.user_manage_gpb.Controls.Add(this.bat_create_card_btn);
             this.user_manage_gpb.Controls.Add(this.import_info_btn);
-            this.user_manage_gpb.Controls.Add(this.user_charge_count_btn);
-            this.user_manage_gpb.Controls.Add(this.user_charge_btn);
             this.user_manage_gpb.Controls.Add(this.user_list_btn);
             this.user_manage_gpb.Controls.Add(this.create_user_btn);
             this.user_manage_gpb.Font = new System.Drawing.Font("宋体", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -184,7 +179,7 @@
             this.set_rank.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
             this.set_rank.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.set_rank.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.set_rank.Location = new System.Drawing.Point(101, 620);
+            this.set_rank.Location = new System.Drawing.Point(101, 434);
             this.set_rank.Name = "set_rank";
             this.set_rank.Size = new System.Drawing.Size(400, 80);
             this.set_rank.TabIndex = 6;
@@ -203,7 +198,7 @@
             this.bat_create_card_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
             this.bat_create_card_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.bat_create_card_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bat_create_card_btn.Location = new System.Drawing.Point(529, 434);
+            this.bat_create_card_btn.Location = new System.Drawing.Point(529, 259);
             this.bat_create_card_btn.Name = "bat_create_card_btn";
             this.bat_create_card_btn.Size = new System.Drawing.Size(400, 80);
             this.bat_create_card_btn.TabIndex = 5;
@@ -222,51 +217,13 @@
             this.import_info_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
             this.import_info_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.import_info_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.import_info_btn.Location = new System.Drawing.Point(101, 434);
+            this.import_info_btn.Location = new System.Drawing.Point(101, 259);
             this.import_info_btn.Name = "import_info_btn";
             this.import_info_btn.Size = new System.Drawing.Size(400, 80);
             this.import_info_btn.TabIndex = 4;
             this.import_info_btn.Tag = "28";
             this.import_info_btn.UseVisualStyleBackColor = false;
             this.import_info_btn.Click += new System.EventHandler(this.import_info_btn_Click);
-            // 
-            // user_charge_count_btn
-            // 
-            this.user_charge_count_btn.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.user_charge_count_btn.BackColor = System.Drawing.SystemColors.Control;
-            this.user_charge_count_btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("user_charge_count_btn.BackgroundImage")));
-            this.user_charge_count_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.user_charge_count_btn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.user_charge_count_btn.FlatAppearance.BorderSize = 0;
-            this.user_charge_count_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.user_charge_count_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.user_charge_count_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.user_charge_count_btn.Location = new System.Drawing.Point(529, 259);
-            this.user_charge_count_btn.Name = "user_charge_count_btn";
-            this.user_charge_count_btn.Size = new System.Drawing.Size(400, 80);
-            this.user_charge_count_btn.TabIndex = 3;
-            this.user_charge_count_btn.Tag = "27";
-            this.user_charge_count_btn.UseVisualStyleBackColor = false;
-            this.user_charge_count_btn.Click += new System.EventHandler(this.user_charge_count_btn_Click);
-            // 
-            // user_charge_btn
-            // 
-            this.user_charge_btn.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.user_charge_btn.BackColor = System.Drawing.SystemColors.Control;
-            this.user_charge_btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("user_charge_btn.BackgroundImage")));
-            this.user_charge_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.user_charge_btn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.user_charge_btn.FlatAppearance.BorderSize = 0;
-            this.user_charge_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.user_charge_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.user_charge_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.user_charge_btn.Location = new System.Drawing.Point(101, 259);
-            this.user_charge_btn.Name = "user_charge_btn";
-            this.user_charge_btn.Size = new System.Drawing.Size(400, 80);
-            this.user_charge_btn.TabIndex = 2;
-            this.user_charge_btn.Tag = "26";
-            this.user_charge_btn.UseVisualStyleBackColor = false;
-            this.user_charge_btn.Click += new System.EventHandler(this.user_charge_btn_Click);
             // 
             // user_list_btn
             // 
@@ -836,8 +793,6 @@
         private System.Windows.Forms.Button set_rank;
         private System.Windows.Forms.Button bat_create_card_btn;
         private System.Windows.Forms.Button import_info_btn;
-        private System.Windows.Forms.Button user_charge_count_btn;
-        private System.Windows.Forms.Button user_charge_btn;
         private System.Windows.Forms.Button user_list_btn;
         private System.Windows.Forms.Button create_user_btn;
         private System.Windows.Forms.Panel user_manage_pan;

@@ -27,12 +27,12 @@ namespace MemberManagementSystem
             InitializeComponent();
 
             this.Text = LoadForm.TextList[int.Parse(this.Tag.ToString())];
+            LoadForm.LoadText(this);
         }
 
-        //加载文本内容
         private void LoginForm_Load(object sender, EventArgs e)
         {
-            LoadForm.LoadText(this);
+            
         }
 
         //登录按钮点击事件

@@ -95,6 +95,7 @@ namespace MemberManagementSystem.Init
             }
         }
 
+        //限制输入静态方法，在需要限制用户输入的控件发生KeyPress事件时调用，传入参数是否允许负数
         public static void LimitInput(object sender,KeyPressEventArgs e,int is_allow_negative)
         {
             if (e.KeyChar == 0x20) e.KeyChar = (char)0; //禁止空格键

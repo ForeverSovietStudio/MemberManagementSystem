@@ -10,6 +10,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/// <summary>
+/// 创建会员
+/// </summary>
+
 namespace MemberManagementSystem.UserManage
 {
     public partial class CreateUser : Form
@@ -21,10 +25,11 @@ namespace MemberManagementSystem.UserManage
         {
             InitializeComponent();
 
-            this.Text = LoadForm.TextList[24];
+            this.Text = LoadForm.TextList[int.Parse(this.Tag.ToString())];
 
             LoadForm.LoadText(this);
 
+            //查询数据库会员等级表
             conn = Program.ConDataBase();
             cmd = new MySqlCommand();
             cmd.Connection = conn;
@@ -40,12 +45,15 @@ namespace MemberManagementSystem.UserManage
             cmd.Dispose();
             reader.Close();
 
+            //设置会员等级和过期时间的默认值
             user_rank_cbb.Text = user_rank_cbb.Items[0].ToString();
             expired_time_dtp.Value = DateTime.Now.AddYears(10);
         }
 
+        //创建按钮点击事件
         private void create_btn_Click(object sender, EventArgs e)
         {
+            //设置卡上余额和可消费次数的默认值
             if (balance_txb.Text == "")
             {
                 balance_txb.Text = "0";
@@ -54,17 +62,18 @@ namespace MemberManagementSystem.UserManage
             {
                 total_num_txb.Text = "10";
             }
-
+            
             string name = name_txb.Text;
             string sex = sex_cbb.Text;
             string tel = tel_txb.Text;
             double balance = double.Parse(balance_txb.Text);
             int total_num = int.Parse(total_num_txb.Text);
-            string user_level = user_rank_cbb.Text;
+            string user_rank = user_rank_cbb.Text;
             DateTime register_time = DateTime.Now;
             DateTime expired_time = expired_time_dtp.Value;
             string remarks = remarks_txb.Text;
 
+            //设置是否填写备注及判断必填项是否为空
             if (remarks == "" || remarks_txb.Enabled == false)
             {
                 remarks = LoadForm.TextList[56];
@@ -74,12 +83,14 @@ namespace MemberManagementSystem.UserManage
                 MessageBox.Show(LoadForm.TextList[57]);
                 return;
             }
+            //判断过期时间是否晚于当前时间
             if (DateTime.Compare(DateTime.Now,expired_time) >= 0)
             {
                 MessageBox.Show(LoadForm.TextList[58]);
                 return;
             }
 
+            //卡上余额，可消费次数及会员等级的默认值
             if (balance_txb.Text == "")
             {
                 balance_txb.Text = "0";
@@ -93,10 +104,11 @@ namespace MemberManagementSystem.UserManage
             if (user_rank_cbb.Text == "")
             {
                 user_rank_cbb.Text = user_rank_cbb.Items[0].ToString();
-                user_level = user_rank_cbb.Items[0].ToString();
+                user_rank = user_rank_cbb.Items[0].ToString();
             }
 
-            string sql = ("insert into user (name,sex,tel,total_charge_num,balance,total_num,charge_num,user_level,user_status,register_time,expired_time,remarks) values ('" + name + "','" + sex + "','" + tel + "','" + "0','" + balance + "','" + total_num + "','" + "0','" + user_level + "','" + "1','" + register_time + "','" + expired_time + "','" + remarks + "')");
+            //按填写的信息向数据库用户表插入数据
+            string sql = ("insert into user (name,sex,tel,total_consume_balance,balance,total_num,total_consume_num,user_rank,user_status,register_time,expired_time,remarks) values ('" + name + "','" + sex + "','" + tel + "','" + "0','" + balance + "','" + total_num + "','" + "0','" + user_rank + "','" + LoadForm.TextList[60] + "','" + register_time + "','" + expired_time + "','" + remarks + "')");
             cmd = new MySqlCommand(sql, conn);
             int result = cmd.ExecuteNonQuery();
 
@@ -104,16 +116,19 @@ namespace MemberManagementSystem.UserManage
             this.Dispose();
         }
 
+        //联系方式限制输入，不允许负数
         private void tel_txb_KeyPress(object sender, KeyPressEventArgs e)
         {
             LoadForm.LimitInput(sender,e,0);
         }
 
+        //卡上余额限制输入，允许负数
         private void balance_txb_KeyPress(object sender, KeyPressEventArgs e)
         {
             LoadForm.LimitInput(sender, e, 1);
         }
 
+        //可消费次数限制输入，不允许负数
         private void total_num_txb_KeyPress(object sender, KeyPressEventArgs e)
         {
             LoadForm.LimitInput(sender, e, 0);
@@ -124,6 +139,7 @@ namespace MemberManagementSystem.UserManage
             this.Dispose();
         }
 
+        //若不设置备注，则禁用备注输入框
         private void is_set_remarks_ckb_CheckedChanged(object sender, EventArgs e)
         {
             remarks_txb.Enabled = !remarks_txb.Enabled;
