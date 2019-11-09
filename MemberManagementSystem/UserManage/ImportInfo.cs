@@ -12,6 +12,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/// <summary>
+/// 会员资料导入
+/// </summary>
+
 namespace MemberManagementSystem.UserManage
 {
     public partial class ImportInfo : Form
@@ -33,8 +37,10 @@ namespace MemberManagementSystem.UserManage
             cmd.Connection = conn;
         }
 
+        //读取Excel表格静态方法，接收完整文件路径作为参数
         public static DataSet ReadExcel(string filepath)
         {
+            //读取Excel表格，将数据存入DataSet
             try
             {
                 string strConn = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + filepath + ";Extended Properties='Excel 8.0;HDR=False;IMEX=1'";
@@ -54,8 +60,10 @@ namespace MemberManagementSystem.UserManage
             }
         }
 
+        //选择文件按钮点击事件
         private void select_file_btn_Click(object sender, EventArgs e)
         {
+            //弹出文件选择对话框
             OpenFileDialog fileDialog = new OpenFileDialog();
             fileDialog.Multiselect = true;
             fileDialog.Title = "请选择文件";
@@ -68,6 +76,7 @@ namespace MemberManagementSystem.UserManage
             selected_file_txb.Text = file;
         }
 
+        //导入按钮点击事件
         private void import_btn_Click(object sender, EventArgs e)
         {
             if (file == "")
@@ -75,6 +84,7 @@ namespace MemberManagementSystem.UserManage
                 return;
             }
             
+            //调用ReadExcel方法，传入文件路径后将DataSet存储的数据存入列表，并建立插入语句存入数据库
             try
             {
                 DataSet ds = ReadExcel(file);
@@ -98,11 +108,13 @@ namespace MemberManagementSystem.UserManage
             
         }
 
+        //取消按钮点击事件
         private void cancel_btn_Click(object sender, EventArgs e)
         {
             this.Dispose();
         }
 
+        //清除选择按钮点击事件
         private void clear_file_btn_Click(object sender, EventArgs e)
         {
             file = "";
