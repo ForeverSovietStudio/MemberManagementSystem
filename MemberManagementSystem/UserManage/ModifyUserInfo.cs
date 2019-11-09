@@ -74,9 +74,15 @@ namespace MemberManagementSystem.UserManage
         //确定按钮点击事件
         private void confirm_btn_Click(object sender, EventArgs e)
         {
+            //设置备注的默认值并确保必填项不为空
+            if (remarks_txb.Text == "")
+            {
+                remarks_txb.Text = LoadForm.TextList[56];
+            }
+
             if (name_txb.Text == "" || tel_txb.Text == "")
             {
-                MessageBox.Show("有必填项为空！");
+                MessageBox.Show(LoadForm.TextList[57]);
                 return;
             }
 
@@ -85,7 +91,7 @@ namespace MemberManagementSystem.UserManage
             cmd = new MySqlCommand(sql, conn);
             cmd.ExecuteScalar();
 
-            MessageBox.Show("修改成功！");
+            MessageBox.Show(LoadForm.TextList[80]);
 
             //调用父窗口的查询方法，刷新会员列表
             sql = "select * from user ";
@@ -112,14 +118,14 @@ namespace MemberManagementSystem.UserManage
         private void delete_user_Click(object sender, EventArgs e)
         {
             MessageBoxButtons messbutton = MessageBoxButtons.OKCancel;
-            DialogResult dr = MessageBox.Show("确认删除？", "删除", messbutton);
+            DialogResult dr = MessageBox.Show(LoadForm.TextList[81], LoadForm.TextList[63], messbutton);
             if (dr == DialogResult.OK)
             {
                 string sql = ("delete from user where id = '" + id + "'");
                 cmd = new MySqlCommand(sql, conn);
                 cmd.ExecuteScalar();
 
-                MessageBox.Show("删除成功！");
+                MessageBox.Show(LoadForm.TextList[82]);
 
                 //设置user表自增的主键id从1开始(实际值为当前最大值加1)
                 sql = ("alter table user auto_increment = 1");

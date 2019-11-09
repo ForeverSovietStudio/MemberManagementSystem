@@ -61,14 +61,14 @@ namespace MemberManagementSystem.UserManage
             }
             else
             {
-                MessageBox.Show("请至少填入一种充值类型！");
+                MessageBox.Show(LoadForm.TextList[83]);
                 return;
             }
 
             sql += " where id = '" + int.Parse(id_txb.Text.ToString()) + "'";
             cmd = new MySqlCommand(sql, conn);
             cmd.ExecuteScalar();
-            MessageBox.Show("充值成功！");
+            MessageBox.Show(LoadForm.TextList[84]);
 
             //调用父窗口的查询方法，刷新会员列表
             sql = "select * from user";

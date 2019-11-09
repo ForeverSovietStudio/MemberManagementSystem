@@ -228,6 +228,9 @@
     <EmbeddedResource Include="UserManage\CreateUser.resx">
       <DependentUpon>CreateUser.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserManage\ImportInfo.resx">
+      <DependentUpon>ImportInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserManage\ModifyUserInfo.resx">
       <DependentUpon>ModifyUserInfo.cs</DependentUpon>
     </EmbeddedResource>

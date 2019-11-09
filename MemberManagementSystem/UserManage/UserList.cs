@@ -184,7 +184,7 @@ namespace MemberManagementSystem.UserManage
             }
             else
             {
-                MessageBox.Show("请选中一条数据！");
+                MessageBox.Show(LoadForm.TextList[89]);
                 return;
             }
             

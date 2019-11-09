@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.TreeNode treeNode23 = new System.Windows.Forms.TreeNode("会员等级");
-            System.Windows.Forms.TreeNode treeNode24 = new System.Windows.Forms.TreeNode("会员状态");
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("会员等级");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("会员状态");
             this.user_list_ltv = new System.Windows.Forms.ListView();
             this.id = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -42,7 +42,7 @@
             this.user_rank = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.user_status = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.register_time = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.last_charge_time = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.last_consume_time = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.expired_time = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.remarks = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -79,17 +79,17 @@
             this.user_rank,
             this.user_status,
             this.register_time,
-            this.last_charge_time,
+            this.last_consume_time,
             this.expired_time,
             this.remarks});
             this.user_list_ltv.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.user_list_ltv.FullRowSelect = true;
             this.user_list_ltv.GridLines = true;
             this.user_list_ltv.HideSelection = false;
-            this.user_list_ltv.Location = new System.Drawing.Point(225, 81);
+            this.user_list_ltv.Location = new System.Drawing.Point(253, 97);
             this.user_list_ltv.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.user_list_ltv.Name = "user_list_ltv";
-            this.user_list_ltv.Size = new System.Drawing.Size(851, 600);
+            this.user_list_ltv.Size = new System.Drawing.Size(957, 719);
             this.user_list_ltv.TabIndex = 0;
             this.user_list_ltv.UseCompatibleStateImageBehavior = false;
             this.user_list_ltv.View = System.Windows.Forms.View.Details;
@@ -149,10 +149,10 @@
             this.register_time.Text = "注册时间";
             this.register_time.Width = 120;
             // 
-            // last_charge_time
+            // last_consume_time
             // 
-            this.last_charge_time.Text = "上次消费时间";
-            this.last_charge_time.Width = 120;
+            this.last_consume_time.Text = "上次消费时间";
+            this.last_consume_time.Width = 120;
             // 
             // expired_time
             // 
@@ -178,11 +178,11 @@
             this.groupBox1.Controls.Add(this.by_name_txb);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 11);
+            this.groupBox1.Location = new System.Drawing.Point(14, 13);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(1063, 61);
+            this.groupBox1.Size = new System.Drawing.Size(1196, 73);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Tag = "67";
@@ -195,18 +195,18 @@
             "男",
             "女",
             " "});
-            this.by_sex_cbb.Location = new System.Drawing.Point(299, 22);
+            this.by_sex_cbb.Location = new System.Drawing.Point(336, 26);
             this.by_sex_cbb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.by_sex_cbb.Name = "by_sex_cbb";
-            this.by_sex_cbb.Size = new System.Drawing.Size(69, 28);
+            this.by_sex_cbb.Size = new System.Drawing.Size(77, 32);
             this.by_sex_cbb.TabIndex = 20;
             // 
             // clear_btn
             // 
-            this.clear_btn.Location = new System.Drawing.Point(799, 23);
+            this.clear_btn.Location = new System.Drawing.Point(899, 28);
             this.clear_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.clear_btn.Name = "clear_btn";
-            this.clear_btn.Size = new System.Drawing.Size(113, 30);
+            this.clear_btn.Size = new System.Drawing.Size(127, 36);
             this.clear_btn.TabIndex = 8;
             this.clear_btn.Tag = "72";
             this.clear_btn.UseVisualStyleBackColor = true;
@@ -215,9 +215,9 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(210, 28);
+            this.label3.Location = new System.Drawing.Point(236, 34);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(39, 20);
+            this.label3.Size = new System.Drawing.Size(46, 24);
             this.label3.TabIndex = 6;
             this.label3.Tag = "69";
             this.label3.Text = "lbl";
@@ -225,10 +225,10 @@
             // advanced_select_btn
             // 
             this.advanced_select_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.advanced_select_btn.Location = new System.Drawing.Point(938, 23);
+            this.advanced_select_btn.Location = new System.Drawing.Point(1055, 28);
             this.advanced_select_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.advanced_select_btn.Name = "advanced_select_btn";
-            this.advanced_select_btn.Size = new System.Drawing.Size(120, 30);
+            this.advanced_select_btn.Size = new System.Drawing.Size(135, 36);
             this.advanced_select_btn.TabIndex = 5;
             this.advanced_select_btn.Tag = "73";
             this.advanced_select_btn.UseVisualStyleBackColor = true;
@@ -236,10 +236,10 @@
             // 
             // select_btn
             // 
-            this.select_btn.Location = new System.Drawing.Point(705, 23);
+            this.select_btn.Location = new System.Drawing.Point(793, 28);
             this.select_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.select_btn.Name = "select_btn";
-            this.select_btn.Size = new System.Drawing.Size(89, 30);
+            this.select_btn.Size = new System.Drawing.Size(100, 36);
             this.select_btn.TabIndex = 4;
             this.select_btn.Tag = "71";
             this.select_btn.UseVisualStyleBackColor = true;
@@ -247,37 +247,37 @@
             // 
             // by_tel_txb
             // 
-            this.by_tel_txb.Location = new System.Drawing.Point(504, 22);
+            this.by_tel_txb.Location = new System.Drawing.Point(567, 26);
             this.by_tel_txb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.by_tel_txb.Name = "by_tel_txb";
-            this.by_tel_txb.Size = new System.Drawing.Size(196, 30);
+            this.by_tel_txb.Size = new System.Drawing.Size(220, 35);
             this.by_tel_txb.TabIndex = 3;
             this.by_tel_txb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.by_tel_txb_KeyPress);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(372, 28);
+            this.label2.Location = new System.Drawing.Point(418, 34);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(39, 20);
+            this.label2.Size = new System.Drawing.Size(46, 24);
             this.label2.TabIndex = 2;
             this.label2.Tag = "70";
             this.label2.Text = "lbl";
             // 
             // by_name_txb
             // 
-            this.by_name_txb.Location = new System.Drawing.Point(105, 22);
+            this.by_name_txb.Location = new System.Drawing.Point(118, 26);
             this.by_name_txb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.by_name_txb.Name = "by_name_txb";
-            this.by_name_txb.Size = new System.Drawing.Size(100, 30);
+            this.by_name_txb.Size = new System.Drawing.Size(112, 35);
             this.by_name_txb.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(16, 28);
+            this.label1.Location = new System.Drawing.Point(18, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 20);
+            this.label1.Size = new System.Drawing.Size(46, 24);
             this.label1.TabIndex = 0;
             this.label1.Tag = "68";
             this.label1.Text = "lbl";
@@ -289,11 +289,11 @@
             this.groupBox2.Controls.Add(this.charge_btn);
             this.groupBox2.Controls.Add(this.by_type_tvw);
             this.groupBox2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox2.Location = new System.Drawing.Point(12, 81);
+            this.groupBox2.Location = new System.Drawing.Point(14, 97);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox2.Size = new System.Drawing.Size(199, 598);
+            this.groupBox2.Size = new System.Drawing.Size(224, 718);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Tag = "74";
@@ -301,10 +301,10 @@
             // charge_btn
             // 
             this.charge_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.charge_btn.Location = new System.Drawing.Point(12, 552);
+            this.charge_btn.Location = new System.Drawing.Point(14, 662);
             this.charge_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.charge_btn.Name = "charge_btn";
-            this.charge_btn.Size = new System.Drawing.Size(168, 32);
+            this.charge_btn.Size = new System.Drawing.Size(189, 38);
             this.charge_btn.TabIndex = 1;
             this.charge_btn.Tag = "26";
             this.charge_btn.UseVisualStyleBackColor = true;
@@ -314,25 +314,25 @@
             // 
             this.by_type_tvw.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.by_type_tvw.Location = new System.Drawing.Point(12, 31);
+            this.by_type_tvw.Location = new System.Drawing.Point(14, 37);
             this.by_type_tvw.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.by_type_tvw.Name = "by_type_tvw";
-            treeNode23.Name = "节点0";
-            treeNode23.Text = "会员等级";
-            treeNode24.Name = "节点1";
-            treeNode24.Text = "会员状态";
+            treeNode1.Name = "节点0";
+            treeNode1.Text = "会员等级";
+            treeNode2.Name = "节点1";
+            treeNode2.Text = "会员状态";
             this.by_type_tvw.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode23,
-            treeNode24});
-            this.by_type_tvw.Size = new System.Drawing.Size(168, 503);
+            treeNode1,
+            treeNode2});
+            this.by_type_tvw.Size = new System.Drawing.Size(188, 603);
             this.by_type_tvw.TabIndex = 0;
             this.by_type_tvw.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.by_type_tvw_AfterSelect);
             // 
             // UserList
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1086, 690);
+            this.ClientSize = new System.Drawing.Size(1222, 828);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.user_list_ltv);
@@ -360,7 +360,7 @@
         private System.Windows.Forms.ColumnHeader user_rank;
         private System.Windows.Forms.ColumnHeader user_status;
         private System.Windows.Forms.ColumnHeader register_time;
-        private System.Windows.Forms.ColumnHeader last_charge_time;
+        private System.Windows.Forms.ColumnHeader last_consume_time;
         private System.Windows.Forms.ColumnHeader expired_time;
         private System.Windows.Forms.ColumnHeader remarks;
         private System.Windows.Forms.GroupBox groupBox1;
