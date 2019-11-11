@@ -37,7 +37,7 @@ namespace MemberManagementSystem.UserManage
             cmd.Connection = conn;
 
             //查询并设置会员等级选项
-            string sql = "select name from vip_rank";
+            string sql = "select name from user_rank";
             cmd = new MySqlCommand(sql, conn);
             MySqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
@@ -114,9 +114,10 @@ namespace MemberManagementSystem.UserManage
             LoadForm.LimitInput(sender,e,0);
         }
 
-        //删除会员
+        //删除会员按钮点击事件
         private void delete_user_Click(object sender, EventArgs e)
         {
+            //弹出确认删除对话框
             MessageBoxButtons messbutton = MessageBoxButtons.OKCancel;
             DialogResult dr = MessageBox.Show(LoadForm.TextList[81], LoadForm.TextList[63], messbutton);
             if (dr == DialogResult.OK)
@@ -127,8 +128,8 @@ namespace MemberManagementSystem.UserManage
 
                 MessageBox.Show(LoadForm.TextList[82]);
 
-                //设置user表自增的主键id从1开始(实际值为当前最大值加1)
-                sql = ("alter table user auto_increment = 1");
+                //设置user表自增的主键id从0开始(实际值为当前最大值加1)
+                sql = ("alter table user auto_increment = 0");
                 cmd = new MySqlCommand(sql, conn);
                 cmd.ExecuteScalar();
 
@@ -140,7 +141,6 @@ namespace MemberManagementSystem.UserManage
                 userList.Show();
                 this.Dispose();
             }
-            else{}
         }
     }
 }

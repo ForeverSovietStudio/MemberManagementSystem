@@ -182,6 +182,12 @@
     <Compile Include="UserManage\ModifyUserInfo.Designer.cs">
       <DependentUpon>ModifyUserInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserManage\ModifyUserRank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManage\ModifyUserRank.Designer.cs">
+      <DependentUpon>ModifyUserRank.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserManage\SetRank.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -233,6 +239,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserManage\ModifyUserInfo.resx">
       <DependentUpon>ModifyUserInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManage\ModifyUserRank.resx">
+      <DependentUpon>ModifyUserRank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManage\SetRank.resx">
+      <DependentUpon>SetRank.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserManage\UserCharge.resx">
       <DependentUpon>UserCharge.cs</DependentUpon>

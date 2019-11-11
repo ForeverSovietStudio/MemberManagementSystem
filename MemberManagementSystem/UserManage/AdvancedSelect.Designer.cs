@@ -39,28 +39,28 @@
             // time1_dtp
             // 
             this.time1_dtp.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.time1_dtp.Location = new System.Drawing.Point(244, 60);
+            this.time1_dtp.Location = new System.Drawing.Point(274, 72);
             this.time1_dtp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.time1_dtp.Name = "time1_dtp";
-            this.time1_dtp.Size = new System.Drawing.Size(146, 30);
+            this.time1_dtp.Size = new System.Drawing.Size(164, 35);
             this.time1_dtp.TabIndex = 3;
             // 
             // time2_dtp
             // 
             this.time2_dtp.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.time2_dtp.Location = new System.Drawing.Point(431, 60);
+            this.time2_dtp.Location = new System.Drawing.Point(485, 72);
             this.time2_dtp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.time2_dtp.Name = "time2_dtp";
-            this.time2_dtp.Size = new System.Drawing.Size(146, 30);
+            this.time2_dtp.Size = new System.Drawing.Size(164, 35);
             this.time2_dtp.TabIndex = 6;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.Location = new System.Drawing.Point(396, 64);
+            this.label4.Location = new System.Drawing.Point(446, 77);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(39, 20);
+            this.label4.Size = new System.Drawing.Size(46, 24);
             this.label4.TabIndex = 7;
             this.label4.Tag = "79";
             this.label4.Text = "lbl";
@@ -68,10 +68,10 @@
             // select_btn
             // 
             this.select_btn.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.select_btn.Location = new System.Drawing.Point(147, 141);
+            this.select_btn.Location = new System.Drawing.Point(165, 169);
             this.select_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.select_btn.Name = "select_btn";
-            this.select_btn.Size = new System.Drawing.Size(114, 44);
+            this.select_btn.Size = new System.Drawing.Size(128, 53);
             this.select_btn.TabIndex = 10;
             this.select_btn.Tag = "71";
             this.select_btn.UseVisualStyleBackColor = true;
@@ -80,10 +80,10 @@
             // cancel_btn
             // 
             this.cancel_btn.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.cancel_btn.Location = new System.Drawing.Point(400, 141);
+            this.cancel_btn.Location = new System.Drawing.Point(450, 169);
             this.cancel_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cancel_btn.Name = "cancel_btn";
-            this.cancel_btn.Size = new System.Drawing.Size(114, 44);
+            this.cancel_btn.Size = new System.Drawing.Size(128, 53);
             this.cancel_btn.TabIndex = 11;
             this.cancel_btn.Tag = "55";
             this.cancel_btn.UseVisualStyleBackColor = true;
@@ -97,18 +97,18 @@
             this.time_cbb.Items.AddRange(new object[] {
             "按注册时间:",
             "按过期时间:"});
-            this.time_cbb.Location = new System.Drawing.Point(76, 62);
+            this.time_cbb.Location = new System.Drawing.Point(86, 74);
             this.time_cbb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.time_cbb.Name = "time_cbb";
-            this.time_cbb.Size = new System.Drawing.Size(153, 28);
+            this.time_cbb.Size = new System.Drawing.Size(172, 32);
             this.time_cbb.TabIndex = 12;
             this.time_cbb.SelectedIndexChanged += new System.EventHandler(this.time_cbb_SelectedIndexChanged);
             // 
             // AdvancedSelect
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(649, 199);
+            this.ClientSize = new System.Drawing.Size(730, 239);
             this.Controls.Add(this.time_cbb);
             this.Controls.Add(this.cancel_btn);
             this.Controls.Add(this.select_btn);
@@ -118,6 +118,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "AdvancedSelect";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Tag = "73";

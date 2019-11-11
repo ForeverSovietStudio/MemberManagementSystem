@@ -71,11 +71,11 @@
             this.groupBox1.Controls.Add(this.name_txb);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("宋体", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox1.Location = new System.Drawing.Point(11, 17);
+            this.groupBox1.Location = new System.Drawing.Point(12, 20);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(744, 417);
+            this.groupBox1.Size = new System.Drawing.Size(837, 500);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Tag = "44";
@@ -88,20 +88,20 @@
             "男",
             "女",
             " "});
-            this.sex_cbb.Location = new System.Drawing.Point(140, 81);
+            this.sex_cbb.Location = new System.Drawing.Point(158, 97);
             this.sex_cbb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sex_cbb.Name = "sex_cbb";
-            this.sex_cbb.Size = new System.Drawing.Size(196, 35);
+            this.sex_cbb.Size = new System.Drawing.Size(220, 41);
             this.sex_cbb.TabIndex = 19;
             // 
             // is_set_remarks_ckb
             // 
             this.is_set_remarks_ckb.AutoSize = true;
             this.is_set_remarks_ckb.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.is_set_remarks_ckb.Location = new System.Drawing.Point(556, 42);
+            this.is_set_remarks_ckb.Location = new System.Drawing.Point(626, 50);
             this.is_set_remarks_ckb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.is_set_remarks_ckb.Name = "is_set_remarks_ckb";
-            this.is_set_remarks_ckb.Size = new System.Drawing.Size(18, 17);
+            this.is_set_remarks_ckb.Size = new System.Drawing.Size(22, 21);
             this.is_set_remarks_ckb.TabIndex = 18;
             this.is_set_remarks_ckb.Tag = "53";
             this.is_set_remarks_ckb.UseVisualStyleBackColor = true;
@@ -110,19 +110,19 @@
             // remarks_txb
             // 
             this.remarks_txb.Enabled = false;
-            this.remarks_txb.Location = new System.Drawing.Point(367, 81);
+            this.remarks_txb.Location = new System.Drawing.Point(413, 97);
             this.remarks_txb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.remarks_txb.Multiline = true;
             this.remarks_txb.Name = "remarks_txb";
-            this.remarks_txb.Size = new System.Drawing.Size(372, 326);
+            this.remarks_txb.Size = new System.Drawing.Size(418, 390);
             this.remarks_txb.TabIndex = 17;
             // 
             // label8
             // 
             this.label8.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label8.Location = new System.Drawing.Point(340, 39);
+            this.label8.Location = new System.Drawing.Point(382, 47);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(129, 28);
+            this.label8.Size = new System.Drawing.Size(145, 34);
             this.label8.TabIndex = 16;
             this.label8.Tag = "52";
             this.label8.Text = "lbl";
@@ -131,18 +131,18 @@
             // expired_time_dtp
             // 
             this.expired_time_dtp.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.expired_time_dtp.Location = new System.Drawing.Point(140, 334);
+            this.expired_time_dtp.Location = new System.Drawing.Point(158, 401);
             this.expired_time_dtp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.expired_time_dtp.Name = "expired_time_dtp";
-            this.expired_time_dtp.Size = new System.Drawing.Size(196, 30);
+            this.expired_time_dtp.Size = new System.Drawing.Size(220, 35);
             this.expired_time_dtp.TabIndex = 15;
             // 
             // label7
             // 
             this.label7.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label7.Location = new System.Drawing.Point(5, 335);
+            this.label7.Location = new System.Drawing.Point(6, 402);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(129, 28);
+            this.label7.Size = new System.Drawing.Size(145, 34);
             this.label7.TabIndex = 14;
             this.label7.Tag = "51";
             this.label7.Text = "lbl";
@@ -152,18 +152,18 @@
             // 
             this.user_rank_cbb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.user_rank_cbb.FormattingEnabled = true;
-            this.user_rank_cbb.Location = new System.Drawing.Point(140, 285);
+            this.user_rank_cbb.Location = new System.Drawing.Point(158, 342);
             this.user_rank_cbb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.user_rank_cbb.Name = "user_rank_cbb";
-            this.user_rank_cbb.Size = new System.Drawing.Size(196, 35);
+            this.user_rank_cbb.Size = new System.Drawing.Size(220, 41);
             this.user_rank_cbb.TabIndex = 13;
             // 
             // label6
             // 
             this.label6.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label6.Location = new System.Drawing.Point(5, 285);
+            this.label6.Location = new System.Drawing.Point(6, 342);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(129, 28);
+            this.label6.Size = new System.Drawing.Size(145, 34);
             this.label6.TabIndex = 12;
             this.label6.Tag = "50";
             this.label6.Text = "lbl";
@@ -171,10 +171,10 @@
             // 
             // total_num_txb
             // 
-            this.total_num_txb.Location = new System.Drawing.Point(140, 231);
+            this.total_num_txb.Location = new System.Drawing.Point(158, 277);
             this.total_num_txb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.total_num_txb.Name = "total_num_txb";
-            this.total_num_txb.Size = new System.Drawing.Size(196, 38);
+            this.total_num_txb.Size = new System.Drawing.Size(220, 44);
             this.total_num_txb.TabIndex = 11;
             this.total_num_txb.Text = "10";
             this.total_num_txb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -183,9 +183,9 @@
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label5.Location = new System.Drawing.Point(5, 235);
+            this.label5.Location = new System.Drawing.Point(6, 282);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(129, 28);
+            this.label5.Size = new System.Drawing.Size(145, 34);
             this.label5.TabIndex = 10;
             this.label5.Tag = "49";
             this.label5.Text = "lbl";
@@ -194,9 +194,9 @@
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.Location = new System.Drawing.Point(5, 185);
+            this.label4.Location = new System.Drawing.Point(6, 222);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(129, 28);
+            this.label4.Size = new System.Drawing.Size(145, 34);
             this.label4.TabIndex = 9;
             this.label4.Tag = "48";
             this.label4.Text = "lbl";
@@ -204,10 +204,10 @@
             // 
             // balance_txb
             // 
-            this.balance_txb.Location = new System.Drawing.Point(140, 181);
+            this.balance_txb.Location = new System.Drawing.Point(158, 217);
             this.balance_txb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.balance_txb.Name = "balance_txb";
-            this.balance_txb.Size = new System.Drawing.Size(196, 38);
+            this.balance_txb.Size = new System.Drawing.Size(220, 44);
             this.balance_txb.TabIndex = 8;
             this.balance_txb.Text = "0";
             this.balance_txb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -216,9 +216,9 @@
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.Location = new System.Drawing.Point(5, 135);
+            this.label3.Location = new System.Drawing.Point(6, 162);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(129, 28);
+            this.label3.Size = new System.Drawing.Size(145, 34);
             this.label3.TabIndex = 7;
             this.label3.Tag = "47";
             this.label3.Text = "lbl";
@@ -227,9 +227,9 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(5, 85);
+            this.label2.Location = new System.Drawing.Point(6, 102);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(129, 28);
+            this.label2.Size = new System.Drawing.Size(145, 34);
             this.label2.TabIndex = 6;
             this.label2.Tag = "46";
             this.label2.Text = "lbl";
@@ -238,28 +238,28 @@
             // tel_txb
             // 
             this.tel_txb.Font = new System.Drawing.Font("宋体", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.tel_txb.Location = new System.Drawing.Point(140, 131);
+            this.tel_txb.Location = new System.Drawing.Point(158, 157);
             this.tel_txb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tel_txb.Name = "tel_txb";
-            this.tel_txb.Size = new System.Drawing.Size(196, 38);
+            this.tel_txb.Size = new System.Drawing.Size(220, 44);
             this.tel_txb.TabIndex = 5;
             this.tel_txb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tel_txb_KeyPress);
             // 
             // name_txb
             // 
-            this.name_txb.Location = new System.Drawing.Point(140, 31);
+            this.name_txb.Location = new System.Drawing.Point(158, 37);
             this.name_txb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.name_txb.Name = "name_txb";
-            this.name_txb.Size = new System.Drawing.Size(196, 38);
+            this.name_txb.Size = new System.Drawing.Size(220, 44);
             this.name_txb.TabIndex = 1;
             this.name_txb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(5, 35);
+            this.label1.Location = new System.Drawing.Point(6, 42);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(129, 28);
+            this.label1.Size = new System.Drawing.Size(145, 34);
             this.label1.TabIndex = 0;
             this.label1.Tag = "45";
             this.label1.Text = "lbl";
@@ -268,10 +268,10 @@
             // cancel_btn
             // 
             this.cancel_btn.Font = new System.Drawing.Font("宋体", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.cancel_btn.Location = new System.Drawing.Point(640, 447);
+            this.cancel_btn.Location = new System.Drawing.Point(720, 536);
             this.cancel_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cancel_btn.Name = "cancel_btn";
-            this.cancel_btn.Size = new System.Drawing.Size(115, 42);
+            this.cancel_btn.Size = new System.Drawing.Size(129, 50);
             this.cancel_btn.TabIndex = 1;
             this.cancel_btn.Tag = "55";
             this.cancel_btn.UseVisualStyleBackColor = true;
@@ -280,10 +280,10 @@
             // create_btn
             // 
             this.create_btn.Font = new System.Drawing.Font("宋体", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.create_btn.Location = new System.Drawing.Point(501, 447);
+            this.create_btn.Location = new System.Drawing.Point(564, 536);
             this.create_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.create_btn.Name = "create_btn";
-            this.create_btn.Size = new System.Drawing.Size(115, 42);
+            this.create_btn.Size = new System.Drawing.Size(129, 50);
             this.create_btn.TabIndex = 2;
             this.create_btn.Tag = "54";
             this.create_btn.UseVisualStyleBackColor = true;
@@ -291,15 +291,16 @@
             // 
             // CreateUser
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(765, 500);
+            this.ClientSize = new System.Drawing.Size(861, 600);
             this.Controls.Add(this.create_btn);
             this.Controls.Add(this.cancel_btn);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "CreateUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Tag = "24";

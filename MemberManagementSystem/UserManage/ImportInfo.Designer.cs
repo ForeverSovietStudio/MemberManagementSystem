@@ -129,7 +129,10 @@
             this.Controls.Add(this.import_btn);
             this.Controls.Add(this.cancel_btn);
             this.Controls.Add(this.select_file_btn);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "ImportInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Tag = "28";

@@ -34,7 +34,7 @@ namespace MemberManagementSystem.UserManage
             cmd = new MySqlCommand();
             cmd.Connection = conn;
 
-            string sql = "select name from vip_rank";
+            string sql = "select name from user_rank";
             cmd = new MySqlCommand(sql,conn);
             MySqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())

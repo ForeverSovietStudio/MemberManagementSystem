@@ -40,7 +40,7 @@ namespace MemberManagementSystem.UserManage
             by_sex_cbb.SelectedIndex = 2;
 
             //设置TreeView中会员等级节点
-            string sql = "select name from vip_rank";
+            string sql = "select name from user_rank";
             cmd = new MySqlCommand(sql, conn);
             MySqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
@@ -71,6 +71,7 @@ namespace MemberManagementSystem.UserManage
             MySqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
             {
+                //向会员列表添加数据
                 ListViewItem listViewItem = new ListViewItem();
                 listViewItem.Text = reader[0].ToString();
                 for (int i = 1; i < 14; i++)

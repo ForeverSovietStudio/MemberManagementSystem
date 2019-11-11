@@ -36,14 +36,16 @@ namespace MemberManagementSystem.Init
             LoadForm.LoadText(this);
         }
 
+        //返回按钮点击事件
         private void back_btn_Click(object sender, EventArgs e)
         {
             this.Dispose();
         }
 
-        //注册按钮响点击事件
+        //注册按钮点击事件
         private void register_btn_Click(object sender, EventArgs e)
         {
+            //用户名不能重复
             if (account_txb.Text != "" && (password_txb.Text == password_confirm_txb.Text && password_txb.Text != ""))
             {
                 cmd.CommandText = "select count(*) from admin where binary username = '" + username_txb.Text + "'";
