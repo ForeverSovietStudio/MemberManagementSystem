@@ -30,7 +30,19 @@
         {
             System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("会员等级");
             System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("会员状态");
-            this.user_list_ltv = new System.Windows.Forms.ListView();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.by_sex_cbb = new System.Windows.Forms.ComboBox();
+            this.clear_btn = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.advanced_select_btn = new System.Windows.Forms.Button();
+            this.select_btn = new System.Windows.Forms.Button();
+            this.by_tel_txb = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.by_name_txb = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.charge_btn = new System.Windows.Forms.Button();
+            this.by_type_tvw = new System.Windows.Forms.TreeView();
             this.id = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.sex = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -45,124 +57,10 @@
             this.last_consume_time = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.expired_time = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.remarks = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.by_sex_cbb = new System.Windows.Forms.ComboBox();
-            this.clear_btn = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.advanced_select_btn = new System.Windows.Forms.Button();
-            this.select_btn = new System.Windows.Forms.Button();
-            this.by_tel_txb = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.by_name_txb = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.charge_btn = new System.Windows.Forms.Button();
-            this.by_type_tvw = new System.Windows.Forms.TreeView();
+            this.user_list_ltv = new System.Windows.Forms.ListView();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // user_list_ltv
-            // 
-            this.user_list_ltv.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.user_list_ltv.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.id,
-            this.name,
-            this.sex,
-            this.tel,
-            this.total_charge_balance,
-            this.balance,
-            this.total_num,
-            this.total_charge_num,
-            this.user_rank,
-            this.user_status,
-            this.register_time,
-            this.last_consume_time,
-            this.expired_time,
-            this.remarks});
-            this.user_list_ltv.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.user_list_ltv.FullRowSelect = true;
-            this.user_list_ltv.GridLines = true;
-            this.user_list_ltv.HideSelection = false;
-            this.user_list_ltv.Location = new System.Drawing.Point(253, 97);
-            this.user_list_ltv.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.user_list_ltv.Name = "user_list_ltv";
-            this.user_list_ltv.Size = new System.Drawing.Size(957, 719);
-            this.user_list_ltv.TabIndex = 0;
-            this.user_list_ltv.UseCompatibleStateImageBehavior = false;
-            this.user_list_ltv.View = System.Windows.Forms.View.Details;
-            this.user_list_ltv.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.user_list_ltv_ColumnClick);
-            this.user_list_ltv.DoubleClick += new System.EventHandler(this.user_list_ltv_DoubleClick);
-            // 
-            // id
-            // 
-            this.id.Text = "ID";
-            // 
-            // name
-            // 
-            this.name.Text = "姓名";
-            this.name.Width = 100;
-            // 
-            // sex
-            // 
-            this.sex.Text = "性别";
-            // 
-            // tel
-            // 
-            this.tel.Text = "联系方式";
-            this.tel.Width = 200;
-            // 
-            // total_charge_balance
-            // 
-            this.total_charge_balance.Text = "总消费金额";
-            this.total_charge_balance.Width = 140;
-            // 
-            // balance
-            // 
-            this.balance.Text = "账户余额";
-            this.balance.Width = 115;
-            // 
-            // total_num
-            // 
-            this.total_num.Text = "剩余可消费次数";
-            this.total_num.Width = 180;
-            // 
-            // total_charge_num
-            // 
-            this.total_charge_num.Text = "已消费次数";
-            this.total_charge_num.Width = 160;
-            // 
-            // user_rank
-            // 
-            this.user_rank.Text = "用户等级";
-            this.user_rank.Width = 120;
-            // 
-            // user_status
-            // 
-            this.user_status.Text = "用户状态";
-            this.user_status.Width = 120;
-            // 
-            // register_time
-            // 
-            this.register_time.Text = "注册时间";
-            this.register_time.Width = 120;
-            // 
-            // last_consume_time
-            // 
-            this.last_consume_time.Text = "上次消费时间";
-            this.last_consume_time.Width = 120;
-            // 
-            // expired_time
-            // 
-            this.expired_time.Text = "账户过期时间";
-            this.expired_time.Width = 120;
-            // 
-            // remarks
-            // 
-            this.remarks.Text = "备注";
-            this.remarks.Width = 120;
             // 
             // groupBox1
             // 
@@ -203,7 +101,7 @@
             // 
             // clear_btn
             // 
-            this.clear_btn.Location = new System.Drawing.Point(899, 28);
+            this.clear_btn.Location = new System.Drawing.Point(899, 25);
             this.clear_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.clear_btn.Name = "clear_btn";
             this.clear_btn.Size = new System.Drawing.Size(127, 36);
@@ -225,7 +123,7 @@
             // advanced_select_btn
             // 
             this.advanced_select_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.advanced_select_btn.Location = new System.Drawing.Point(1055, 28);
+            this.advanced_select_btn.Location = new System.Drawing.Point(1055, 25);
             this.advanced_select_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.advanced_select_btn.Name = "advanced_select_btn";
             this.advanced_select_btn.Size = new System.Drawing.Size(135, 36);
@@ -236,7 +134,7 @@
             // 
             // select_btn
             // 
-            this.select_btn.Location = new System.Drawing.Point(793, 28);
+            this.select_btn.Location = new System.Drawing.Point(793, 25);
             this.select_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.select_btn.Name = "select_btn";
             this.select_btn.Size = new System.Drawing.Size(100, 36);
@@ -328,6 +226,109 @@
             this.by_type_tvw.TabIndex = 0;
             this.by_type_tvw.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.by_type_tvw_AfterSelect);
             // 
+            // id
+            // 
+            this.id.Text = "ID";
+            // 
+            // name
+            // 
+            this.name.Text = "姓名";
+            this.name.Width = 100;
+            // 
+            // sex
+            // 
+            this.sex.Text = "性别";
+            // 
+            // tel
+            // 
+            this.tel.Text = "联系方式";
+            this.tel.Width = 200;
+            // 
+            // total_charge_balance
+            // 
+            this.total_charge_balance.Text = "总消费金额";
+            this.total_charge_balance.Width = 140;
+            // 
+            // balance
+            // 
+            this.balance.Text = "账户余额";
+            this.balance.Width = 115;
+            // 
+            // total_num
+            // 
+            this.total_num.Text = "剩余可消费次数";
+            this.total_num.Width = 180;
+            // 
+            // total_charge_num
+            // 
+            this.total_charge_num.Text = "已消费次数";
+            this.total_charge_num.Width = 160;
+            // 
+            // user_rank
+            // 
+            this.user_rank.Text = "用户等级";
+            this.user_rank.Width = 120;
+            // 
+            // user_status
+            // 
+            this.user_status.Text = "用户状态";
+            this.user_status.Width = 120;
+            // 
+            // register_time
+            // 
+            this.register_time.Text = "注册时间";
+            this.register_time.Width = 120;
+            // 
+            // last_consume_time
+            // 
+            this.last_consume_time.Text = "上次消费时间";
+            this.last_consume_time.Width = 120;
+            // 
+            // expired_time
+            // 
+            this.expired_time.Text = "账户过期时间";
+            this.expired_time.Width = 120;
+            // 
+            // remarks
+            // 
+            this.remarks.Text = "备注";
+            this.remarks.Width = 120;
+            // 
+            // user_list_ltv
+            // 
+            this.user_list_ltv.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.user_list_ltv.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.id,
+            this.name,
+            this.sex,
+            this.tel,
+            this.total_charge_balance,
+            this.balance,
+            this.total_num,
+            this.total_charge_num,
+            this.user_rank,
+            this.user_status,
+            this.register_time,
+            this.last_consume_time,
+            this.expired_time,
+            this.remarks});
+            this.user_list_ltv.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.user_list_ltv.FullRowSelect = true;
+            this.user_list_ltv.GridLines = true;
+            this.user_list_ltv.HideSelection = false;
+            this.user_list_ltv.Location = new System.Drawing.Point(253, 97);
+            this.user_list_ltv.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.user_list_ltv.MultiSelect = false;
+            this.user_list_ltv.Name = "user_list_ltv";
+            this.user_list_ltv.Size = new System.Drawing.Size(957, 719);
+            this.user_list_ltv.TabIndex = 0;
+            this.user_list_ltv.UseCompatibleStateImageBehavior = false;
+            this.user_list_ltv.View = System.Windows.Forms.View.Details;
+            this.user_list_ltv.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.user_list_ltv_ColumnClick);
+            this.user_list_ltv.DoubleClick += new System.EventHandler(this.user_list_ltv_DoubleClick);
+            // 
             // UserList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -349,11 +350,23 @@
         }
 
         #endregion
-
-        public System.Windows.Forms.ListView user_list_ltv;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox by_tel_txb;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox by_name_txb;
+        private System.Windows.Forms.Button select_btn;
+        private System.Windows.Forms.Button advanced_select_btn;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.TreeView by_type_tvw;
+        private System.Windows.Forms.Button charge_btn;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button clear_btn;
+        private System.Windows.Forms.ComboBox by_sex_cbb;
         private System.Windows.Forms.ColumnHeader id;
         private System.Windows.Forms.ColumnHeader name;
         private System.Windows.Forms.ColumnHeader sex;
+        private System.Windows.Forms.ColumnHeader tel;
         private System.Windows.Forms.ColumnHeader total_charge_balance;
         private System.Windows.Forms.ColumnHeader balance;
         private System.Windows.Forms.ColumnHeader total_num;
@@ -364,19 +377,6 @@
         private System.Windows.Forms.ColumnHeader last_consume_time;
         private System.Windows.Forms.ColumnHeader expired_time;
         private System.Windows.Forms.ColumnHeader remarks;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox by_tel_txb;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox by_name_txb;
-        private System.Windows.Forms.Button select_btn;
-        private System.Windows.Forms.Button advanced_select_btn;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TreeView by_type_tvw;
-        private System.Windows.Forms.ColumnHeader tel;
-        private System.Windows.Forms.Button charge_btn;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button clear_btn;
-        private System.Windows.Forms.ComboBox by_sex_cbb;
+        public System.Windows.Forms.ListView user_list_ltv;
     }
 }

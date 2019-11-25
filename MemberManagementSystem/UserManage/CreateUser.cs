@@ -34,7 +34,7 @@ namespace MemberManagementSystem.UserManage
             cmd = new MySqlCommand();
             cmd.Connection = conn;
 
-            string sql = "select name from user_rank";
+            string sql = "select name from user_rank order by discount_rate desc";
             cmd = new MySqlCommand(sql,conn);
             MySqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
@@ -110,7 +110,7 @@ namespace MemberManagementSystem.UserManage
             //按填写的信息向数据库用户表插入数据
             string sql = ("insert into user (name,sex,tel,total_consume_balance,balance,total_num,total_consume_num,user_rank,user_status,register_time,expired_time,remarks) values ('" + name + "','" + sex + "','" + tel + "','" + "0','" + balance + "','" + total_num + "','" + "0','" + user_rank + "','" + LoadForm.TextList[60] + "','" + register_time + "','" + expired_time + "','" + remarks + "')");
             cmd = new MySqlCommand(sql, conn);
-            int result = cmd.ExecuteNonQuery();
+            cmd.ExecuteNonQuery();
 
             MessageBox.Show(LoadForm.TextList[59]);
             this.Dispose();

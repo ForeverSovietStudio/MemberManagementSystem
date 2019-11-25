@@ -25,7 +25,7 @@ namespace MemberManagementSystem
         //连接数据库静态方法，所有数据库操作都调用该方法的返回值
         public static MySqlConnection ConDataBase()
         {
-            String connetStr = "server=localhost;port=3306;user=root;password=admin;database=membermanagementsystem;SslMode = none;";
+            String connetStr = "server=121.196.208.198;port=3306;user=kurui;password=kurui;database=membermanagementsystem;SslMode = none;characterset=utf8";
 
             MySqlConnection conn = new MySqlConnection(connetStr);
             try

@@ -131,14 +131,14 @@ namespace MemberManagementSystem.Main
         //商品分类设置功能
         private void set_goods_type_btn_Click(object sender, EventArgs e)
         {
-            SetGoodsType setGoodsType = new SetGoodsType();
+            SetGoodsType setGoodsType = new SetGoodsType(false);
             setGoodsType.ShowDialog();
         }
 
         //供应商管理功能
         private void supplier_manage_btn_Click(object sender, EventArgs e)
         {
-            SupplierManage supplierManage = new SupplierManage();
+            SupplierManage supplierManage = new SupplierManage(false);
             supplierManage.ShowDialog();
         }
 

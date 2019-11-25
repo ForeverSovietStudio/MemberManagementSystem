@@ -41,6 +41,8 @@ namespace MemberManagementSystem.UserManage
         //查询方法，将查询结果以ListView的形式显示
         public void SelectRank(string sql)
         {
+            user_rank_ltv.Items.Clear();
+
             cmd = new MySqlCommand(sql, conn);
             MySqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
@@ -85,6 +87,13 @@ namespace MemberManagementSystem.UserManage
                 MessageBox.Show("该等级已存在！");
 
                 cmd.Dispose();
+                return;
+            }
+
+            //确保输入的折扣比例小于等于1
+            if (int.Parse(discount_rate_txb.Text) > 1)
+            {
+                MessageBox.Show("折扣比例需小于等于1！");
                 return;
             }
 

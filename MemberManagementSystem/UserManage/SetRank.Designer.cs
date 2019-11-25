@@ -165,6 +165,7 @@
             this.user_rank_ltv.GridLines = true;
             this.user_rank_ltv.HideSelection = false;
             this.user_rank_ltv.Location = new System.Drawing.Point(6, 27);
+            this.user_rank_ltv.MultiSelect = false;
             this.user_rank_ltv.Name = "user_rank_ltv";
             this.user_rank_ltv.Size = new System.Drawing.Size(796, 313);
             this.user_rank_ltv.TabIndex = 0;

@@ -67,6 +67,13 @@ namespace MemberManagementSystem.UserManage
                     return;
                 }
             }
+
+            //确保输入的折扣比例小于等于1
+            if (double.Parse(discount_rate_txb.Text) > 1)
+            {
+                MessageBox.Show("折扣比例需小于等于1！");
+                return;
+            }
             //更新user_rank表的等级名称和折扣比例
             string sql = ("update user_rank set name = '" + rank_name_txb.Text + "',discount_rate = '" + discount_rate_txb.Text + "' where name = '" + rank_name + "'");
             cmd = new MySqlCommand(sql, conn);
@@ -82,7 +89,6 @@ namespace MemberManagementSystem.UserManage
             //调用父窗口的查询方法，刷新会员等级列表
             sql = "select * from user_rank ";
             SetRank setRank = (SetRank)this.Owner;
-            setRank.user_rank_ltv.Items.Clear();
             setRank.SelectRank(sql);
             setRank.Show();
             this.Dispose();
@@ -123,7 +129,6 @@ namespace MemberManagementSystem.UserManage
                 //调用父窗口的查询方法，刷新会员等级列表
                 sql = "select * from user_rank ";
                 SetRank setRank = (SetRank)this.Owner;
-                setRank.user_rank_ltv.Items.Clear();
                 setRank.SelectRank(sql);
                 setRank.Show();
                 this.Dispose();

@@ -40,7 +40,7 @@ namespace MemberManagementSystem.UserManage
             by_sex_cbb.SelectedIndex = 2;
 
             //设置TreeView中会员等级节点
-            string sql = "select name from user_rank";
+            string sql = "select name from user_rank order by discount_rate desc";
             cmd = new MySqlCommand(sql, conn);
             MySqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
@@ -67,6 +67,8 @@ namespace MemberManagementSystem.UserManage
         //查询方法，将查询结果以ListView的形式显示
         public void SelectUser(string sql)
         {
+            user_list_ltv.Items.Clear();
+
             cmd = new MySqlCommand(sql, conn);
             MySqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
@@ -114,7 +116,6 @@ namespace MemberManagementSystem.UserManage
             }
 
             //刷新ListView，显示查询结果
-            user_list_ltv.Items.Clear();
             SelectUser(sql);
         }
 
@@ -126,7 +127,6 @@ namespace MemberManagementSystem.UserManage
             by_name_txb.Text = "";
             by_sex_cbb.Text = " ";
             by_tel_txb.Text = "";
-            user_list_ltv.Items.Clear();
             SelectUser(sql);
         }
 
@@ -169,7 +169,6 @@ namespace MemberManagementSystem.UserManage
                 }
                 
             }
-            user_list_ltv.Items.Clear();
             SelectUser(sql);
         }
 

@@ -37,7 +37,6 @@
             this.user_manage_btn = new System.Windows.Forms.Button();
             this.user_manage_gpb = new System.Windows.Forms.GroupBox();
             this.set_rank = new System.Windows.Forms.Button();
-            this.bat_create_card_btn = new System.Windows.Forms.Button();
             this.import_info_btn = new System.Windows.Forms.Button();
             this.user_list_btn = new System.Windows.Forms.Button();
             this.create_user_btn = new System.Windows.Forms.Button();
@@ -56,7 +55,6 @@
             this.set_goods_type_btn = new System.Windows.Forms.Button();
             this.purchase_return_btn = new System.Windows.Forms.Button();
             this.view_stock_btn = new System.Windows.Forms.Button();
-            this.package_list_btn = new System.Windows.Forms.Button();
             this.goods_list_btn = new System.Windows.Forms.Button();
             this.create_goods_btn = new System.Windows.Forms.Button();
             this.sys_settings_pan = new System.Windows.Forms.Panel();
@@ -156,7 +154,6 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.user_manage_gpb.Controls.Add(this.set_rank);
-            this.user_manage_gpb.Controls.Add(this.bat_create_card_btn);
             this.user_manage_gpb.Controls.Add(this.import_info_btn);
             this.user_manage_gpb.Controls.Add(this.user_list_btn);
             this.user_manage_gpb.Controls.Add(this.create_user_btn);
@@ -179,32 +176,13 @@
             this.set_rank.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
             this.set_rank.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.set_rank.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.set_rank.Location = new System.Drawing.Point(101, 434);
+            this.set_rank.Location = new System.Drawing.Point(529, 259);
             this.set_rank.Name = "set_rank";
             this.set_rank.Size = new System.Drawing.Size(400, 80);
             this.set_rank.TabIndex = 6;
             this.set_rank.Tag = "30";
             this.set_rank.UseVisualStyleBackColor = false;
             this.set_rank.Click += new System.EventHandler(this.set_rank_Click);
-            // 
-            // bat_create_card_btn
-            // 
-            this.bat_create_card_btn.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.bat_create_card_btn.BackColor = System.Drawing.SystemColors.Control;
-            this.bat_create_card_btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bat_create_card_btn.BackgroundImage")));
-            this.bat_create_card_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.bat_create_card_btn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.bat_create_card_btn.FlatAppearance.BorderSize = 0;
-            this.bat_create_card_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.bat_create_card_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.bat_create_card_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bat_create_card_btn.Location = new System.Drawing.Point(529, 259);
-            this.bat_create_card_btn.Name = "bat_create_card_btn";
-            this.bat_create_card_btn.Size = new System.Drawing.Size(400, 80);
-            this.bat_create_card_btn.TabIndex = 5;
-            this.bat_create_card_btn.Tag = "29";
-            this.bat_create_card_btn.UseVisualStyleBackColor = false;
-            this.bat_create_card_btn.Click += new System.EventHandler(this.bat_create_card_btn_Click);
             // 
             // import_info_btn
             // 
@@ -314,7 +292,7 @@
             this.consume_return_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
             this.consume_return_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.consume_return_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.consume_return_btn.Location = new System.Drawing.Point(101, 434);
+            this.consume_return_btn.Location = new System.Drawing.Point(101, 418);
             this.consume_return_btn.Name = "consume_return_btn";
             this.consume_return_btn.Size = new System.Drawing.Size(400, 80);
             this.consume_return_btn.TabIndex = 4;
@@ -419,7 +397,6 @@
             this.goods_manage_gpb.Controls.Add(this.set_goods_type_btn);
             this.goods_manage_gpb.Controls.Add(this.purchase_return_btn);
             this.goods_manage_gpb.Controls.Add(this.view_stock_btn);
-            this.goods_manage_gpb.Controls.Add(this.package_list_btn);
             this.goods_manage_gpb.Controls.Add(this.goods_list_btn);
             this.goods_manage_gpb.Controls.Add(this.create_goods_btn);
             this.goods_manage_gpb.Font = new System.Drawing.Font("宋体", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -441,7 +418,7 @@
             this.bat_import_goods_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
             this.bat_import_goods_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.bat_import_goods_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bat_import_goods_btn.Location = new System.Drawing.Point(529, 620);
+            this.bat_import_goods_btn.Location = new System.Drawing.Point(101, 577);
             this.bat_import_goods_btn.Name = "bat_import_goods_btn";
             this.bat_import_goods_btn.Size = new System.Drawing.Size(400, 80);
             this.bat_import_goods_btn.TabIndex = 7;
@@ -460,7 +437,7 @@
             this.supplier_manage_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
             this.supplier_manage_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.supplier_manage_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.supplier_manage_btn.Location = new System.Drawing.Point(101, 620);
+            this.supplier_manage_btn.Location = new System.Drawing.Point(101, 259);
             this.supplier_manage_btn.Name = "supplier_manage_btn";
             this.supplier_manage_btn.Size = new System.Drawing.Size(400, 80);
             this.supplier_manage_btn.TabIndex = 6;
@@ -479,7 +456,7 @@
             this.set_goods_type_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
             this.set_goods_type_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.set_goods_type_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.set_goods_type_btn.Location = new System.Drawing.Point(529, 434);
+            this.set_goods_type_btn.Location = new System.Drawing.Point(529, 418);
             this.set_goods_type_btn.Name = "set_goods_type_btn";
             this.set_goods_type_btn.Size = new System.Drawing.Size(400, 80);
             this.set_goods_type_btn.TabIndex = 5;
@@ -498,7 +475,7 @@
             this.purchase_return_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
             this.purchase_return_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.purchase_return_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.purchase_return_btn.Location = new System.Drawing.Point(101, 434);
+            this.purchase_return_btn.Location = new System.Drawing.Point(101, 418);
             this.purchase_return_btn.Name = "purchase_return_btn";
             this.purchase_return_btn.Size = new System.Drawing.Size(400, 80);
             this.purchase_return_btn.TabIndex = 4;
@@ -524,25 +501,6 @@
             this.view_stock_btn.Tag = "34";
             this.view_stock_btn.UseVisualStyleBackColor = false;
             this.view_stock_btn.Click += new System.EventHandler(this.view_stock_btn_Click);
-            // 
-            // package_list_btn
-            // 
-            this.package_list_btn.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.package_list_btn.BackColor = System.Drawing.SystemColors.Control;
-            this.package_list_btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("package_list_btn.BackgroundImage")));
-            this.package_list_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.package_list_btn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.package_list_btn.FlatAppearance.BorderSize = 0;
-            this.package_list_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.package_list_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.package_list_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.package_list_btn.Location = new System.Drawing.Point(101, 259);
-            this.package_list_btn.Name = "package_list_btn";
-            this.package_list_btn.Size = new System.Drawing.Size(400, 80);
-            this.package_list_btn.TabIndex = 2;
-            this.package_list_btn.Tag = "33";
-            this.package_list_btn.UseVisualStyleBackColor = false;
-            this.package_list_btn.Click += new System.EventHandler(this.package_list_btn_Click);
             // 
             // goods_list_btn
             // 
@@ -759,8 +717,8 @@
             this.Controls.Add(this.user_manage_pan);
             this.Controls.Add(this.sys_settings_pan);
             this.Controls.Add(this.stat_report_pan);
-            this.Controls.Add(this.goods_manage_pan);
             this.Controls.Add(this.user_consume_pan);
+            this.Controls.Add(this.goods_manage_pan);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "MainSurface";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -791,7 +749,6 @@
         private System.Windows.Forms.Button sys_settings_btn;
         private System.Windows.Forms.GroupBox user_manage_gpb;
         private System.Windows.Forms.Button set_rank;
-        private System.Windows.Forms.Button bat_create_card_btn;
         private System.Windows.Forms.Button import_info_btn;
         private System.Windows.Forms.Button user_list_btn;
         private System.Windows.Forms.Button create_user_btn;
@@ -802,7 +759,6 @@
         private System.Windows.Forms.Button set_goods_type_btn;
         private System.Windows.Forms.Button purchase_return_btn;
         private System.Windows.Forms.Button view_stock_btn;
-        private System.Windows.Forms.Button package_list_btn;
         private System.Windows.Forms.Button goods_list_btn;
         private System.Windows.Forms.Button create_goods_btn;
         private System.Windows.Forms.Button bat_import_goods_btn;

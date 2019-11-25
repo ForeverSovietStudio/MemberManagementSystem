@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GoodsManage\AdvancedGoodsSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoodsManage\AdvancedGoodsSelect.Designer.cs">
+      <DependentUpon>AdvancedGoodsSelect.cs</DependentUpon>
+    </Compile>
     <Compile Include="GoodsManage\BatImportGoods.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +70,18 @@
     </Compile>
     <Compile Include="GoodsManage\GoodsList.Designer.cs">
       <DependentUpon>GoodsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsManage\ModifyGoodsInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoodsManage\ModifyGoodsInfo.Designer.cs">
+      <DependentUpon>ModifyGoodsInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsManage\ModifySupplierInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoodsManage\ModifySupplierInfo.Designer.cs">
+      <DependentUpon>ModifySupplierInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="GoodsManage\PackageList.cs">
       <SubType>Form</SubType>
@@ -206,6 +224,27 @@
     <Compile Include="UserManage\UserList.Designer.cs">
       <DependentUpon>UserList.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="GoodsManage\AdvancedGoodsSelect.resx">
+      <DependentUpon>AdvancedGoodsSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoodsManage\CreateGoods.resx">
+      <DependentUpon>CreateGoods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoodsManage\GoodsList.resx">
+      <DependentUpon>GoodsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoodsManage\ModifyGoodsInfo.resx">
+      <DependentUpon>ModifyGoodsInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoodsManage\ModifySupplierInfo.resx">
+      <DependentUpon>ModifySupplierInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoodsManage\SetGoodsType.resx">
+      <DependentUpon>SetGoodsType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoodsManage\SupplierManage.resx">
+      <DependentUpon>SupplierManage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Init\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>

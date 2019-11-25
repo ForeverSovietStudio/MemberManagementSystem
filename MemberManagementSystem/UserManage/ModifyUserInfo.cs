@@ -37,7 +37,7 @@ namespace MemberManagementSystem.UserManage
             cmd.Connection = conn;
 
             //查询并设置会员等级选项
-            string sql = "select name from user_rank";
+            string sql = "select name from user_rank order by discount_rate desc";
             cmd = new MySqlCommand(sql, conn);
             MySqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
@@ -62,13 +62,13 @@ namespace MemberManagementSystem.UserManage
 
             //通过接收的ListView子项显示当前选中的会员信息
             id = int.Parse(listViewSubItem[0].Text);
-            name_txb.Text = listViewSubItem[1].Text.ToString();
-            sex_cbb.Text = listViewSubItem[2].Text.ToString();
-            tel_txb.Text = listViewSubItem[3].Text.ToString();
-            user_rank_cbb.Text = listViewSubItem[8].Text.ToString();
-            user_status_cbb.Text = listViewSubItem[9].Text.ToString();
+            name_txb.Text = listViewSubItem[1].Text;
+            sex_cbb.Text = listViewSubItem[2].Text;
+            tel_txb.Text = listViewSubItem[3].Text;
+            user_rank_cbb.Text = listViewSubItem[8].Text;
+            user_status_cbb.Text = listViewSubItem[9].Text;
             expired_time_dtp.Value = Convert.ToDateTime(listViewSubItem[12].Text.ToString());
-            remarks_txb.Text = listViewSubItem[13].Text.ToString();
+            remarks_txb.Text = listViewSubItem[13].Text;
         }
 
         //确定按钮点击事件
@@ -115,7 +115,7 @@ namespace MemberManagementSystem.UserManage
         }
 
         //删除会员按钮点击事件
-        private void delete_user_Click(object sender, EventArgs e)
+        private void delete_btn_Click(object sender, EventArgs e)
         {
             //弹出确认删除对话框
             MessageBoxButtons messbutton = MessageBoxButtons.OKCancel;

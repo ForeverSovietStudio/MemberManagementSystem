@@ -11,12 +11,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 /// <summary>
-/// 新增商品
+/// 编辑商品信息
 /// </summary>
 
 namespace MemberManagementSystem.GoodsManage
 {
-    public partial class CreateGoods : Form
+    public partial class ModifyGoodsInfo : Form
     {
         MySqlConnection conn;
         MySqlCommand cmd;
@@ -25,7 +25,11 @@ namespace MemberManagementSystem.GoodsManage
         public ListViewItem selectedSupplierItem;
         public bool is_by_num;
 
-        public CreateGoods()
+        int id;
+        string goods_name;
+
+        //构造函数接收传入的ListView子项类型
+        public ModifyGoodsInfo(ListViewItem.ListViewSubItemCollection listViewSubItem)
         {
             InitializeComponent();
 
@@ -35,21 +39,28 @@ namespace MemberManagementSystem.GoodsManage
             conn = Program.ConDataBase();
             cmd = new MySqlCommand();
             cmd.Connection = conn;
+
+            //设置各商品信息为传入的商品信息
+            id = int.Parse(listViewSubItem[0].Text);
+            goods_name = listViewSubItem[1].Text;
+            goods_name_txb.Text = listViewSubItem[1].Text;
+            select_goods_type_btn.Text = listViewSubItem[2].Text;
+            stock_num_txb.Text = listViewSubItem[3].Text;
+            sell_price_txb.Text = listViewSubItem[5].Text;
+            purchase_price_txb.Text = listViewSubItem[6].Text;
+            select_supplier_btn.Text = listViewSubItem[8].Text;
         }
 
-        //寻找根节点递归方法，传入初始节点参数
+        //FindParentNode递归方法
         public void FindParentNode(TreeNode treeNode)
         {
-            //如果传入节点为空，则结束
             if (treeNode == null)
             {
                 return;
             }
 
-            //如果传入节点的父节点为空，即已找到根节点
             if (treeNode.Parent == null)
             {
-                //如果根节点索引为0，则为计次消费商品，否则为非计次消费商品
                 if (treeNode.Index == 0)
                 {
                     is_by_num = true;
@@ -61,7 +72,6 @@ namespace MemberManagementSystem.GoodsManage
                     return;
                 }
             }
-            //如果传入节点的父节点不为空，将传入节点的父节点作为新的节点传入该方法，开始递归
             else
             {
                 FindParentNode(treeNode.Parent);
@@ -71,52 +81,44 @@ namespace MemberManagementSystem.GoodsManage
         //选择商品分类按钮点击事件
         private void select_goods_type_btn_Click(object sender, EventArgs e)
         {
-            //打开商品分类窗口，设置商品分类窗口的是否正在选择商品分类属性为真
             SetGoodsType setGoodsType = new SetGoodsType(true);
+            setGoodsType.isModifyingGoods = true;
             setGoodsType.ShowDialog(this);
 
-            //如果选择的分类不为空，将该按钮的文本修改为选择的商品分类
             if (selectedGoodsTypeNode != null)
             {
                 select_goods_type_btn.Text = selectedGoodsTypeNode.Text;
             }
 
-            //调用FindParentNode方法，传入当前选择的分类节点
             FindParentNode(selectedGoodsTypeNode);
-            //设置是否为计次商品的复选框值为is_by_num
             is_by_num_cbx.Checked = is_by_num;
-            //如果是计次商品，设置库存数量为-1且不允许更改
             if (is_by_num_cbx.Checked)
             {
                 stock_num_txb.Text = "-1";
                 stock_num_txb.Enabled = false;
             }
-            //如果是非计次商品，允许修改库存数量
-            else
+            if (stock_num_txb.Text == "-1" && !is_by_num_cbx.Checked)
             {
-                stock_num_txb.Text = "";
-                stock_num_txb.Enabled = true;
+                stock_num_txb.Text = "0";
             }
 
-            //禁用是否为计次商品的复选框
             is_by_num_cbx.Enabled = false;
         }
 
         //选择供应商按钮点击事件
         private void select_supplier_btn_Click(object sender, EventArgs e)
         {
-            //打开供应商管理窗口，设置供应商管理窗口是否正在选择供应商属性为真
             SupplierManage supplierManage = new SupplierManage(true);
+            supplierManage.isModifyingGoods = true;
             supplierManage.ShowDialog(this);
 
-            //如果选择的供应商不为空，将该按钮的文本修改为选择的供应商名称
             if (selectedSupplierItem != null)
             {
                 select_supplier_btn.Text = selectedSupplierItem.SubItems[1].Text;
             }
         }
 
-        //确认按钮点击事件
+        //确定按钮点击事件
         private void confirm_btn_Click(object sender, EventArgs e)
         {
             //确保必填项都不为空
@@ -127,22 +129,23 @@ namespace MemberManagementSystem.GoodsManage
             }
 
             //确保填写的商品名称不重复
-            cmd.CommandText = "select count(*) from goods where binary name = '" + goods_name_txb.Text + "'";
-
-            if (Convert.ToInt32(cmd.ExecuteScalar()) == 1)
+            if (goods_name_txb.Text != goods_name)
             {
-                MessageBox.Show("填写的商品已存在！");
-                return;
-            }
-            cmd.Dispose();
+                cmd.CommandText = "select count(*) from goods where binary name = '" + goods_name_txb.Text + "'";
 
-            //如果未填写库存数量，将库存数量设置为0
+                if (Convert.ToInt32(cmd.ExecuteScalar()) == 1)
+                {
+                    MessageBox.Show("填写的商品已存在！");
+                    return;
+                }
+                cmd.Dispose();
+            }
+
             if (stock_num_txb.Text == "")
             {
                 stock_num_txb.Text = "0";
             }
 
-            //根据选择的供应商名称获取供应商id，若未选择则为0
             int supplier_id = 0;
             string sql = "";
             if (select_supplier_btn.Text != LoadForm.TextList[98])
@@ -158,43 +161,53 @@ namespace MemberManagementSystem.GoodsManage
                 reader.Close();
             }
 
-            //向数据库goods表插入相关数据
-            sql = "insert into goods (id,name,type,stock_num,sold_num,sell_price,purchase_price,stock_time,supplier_id) values ('0','" + goods_name_txb.Text + "','" + select_goods_type_btn.Text + "','" + stock_num_txb.Text + "','0','" + sell_price_txb.Text + "','" + purchase_price_txb.Text + "','" + DateTime.Now + "','" + supplier_id + "')";
+            //更新数据库goods表
+            sql = "update goods set name = '" + goods_name_txb.Text + "',type = '" + select_goods_type_btn.Text + "',stock_num = '" + stock_num_txb.Text + "',sell_price = '" + sell_price_txb.Text + "',purchase_price = '" + purchase_price_txb.Text + "',supplier_id = '" + supplier_id + "' where id = '" + id + "'";
             cmd = new MySqlCommand(sql, conn);
-            cmd.ExecuteNonQuery();
+            cmd.ExecuteScalar();
 
-            MessageBox.Show("创建成功！");
+            MessageBox.Show(LoadForm.TextList[80]);
+
+            //调用父窗口的查询方法，刷新商品列表
+            sql = "SELECT g.id, g.`name`, g.type, g.stock_num, g.sold_num, g.sell_price, g.purchase_price, g.stock_time, s.`name` as sName FROM goods as g, supplier as s WHERE g.supplier_id = s.id";
+            GoodsList goodsList = (GoodsList)this.Owner;
+            goodsList.goods_list_ltv.Items.Clear();
+            goodsList.SelectGoods(sql);
+            goodsList.Show();
             this.Dispose();
         }
 
-        //取消按钮点击事件
         private void cancel_btn_Click(object sender, EventArgs e)
         {
             this.Dispose();
         }
 
-        //更改是否为计次商品复选框值事件
-        private void is_by_num_cbx_CheckedChanged(object sender, EventArgs e)
+        private void delete_btn_Click(object sender, EventArgs e)
         {
-            stock_num_txb.Enabled = !is_by_num_cbx.Checked;
-        }
+            //弹出确认删除对话框
+            MessageBoxButtons messbutton = MessageBoxButtons.OKCancel;
+            DialogResult dr = MessageBox.Show(LoadForm.TextList[81], LoadForm.TextList[63], messbutton);
+            if (dr == DialogResult.OK)
+            {
+                string sql = ("delete from goods where id = '" + id + "'");
+                cmd = new MySqlCommand(sql, conn);
+                cmd.ExecuteScalar();
 
-        //限制库存数量文本输入，不允许负数
-        private void stock_num_txb_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            LoadForm.LimitInput(sender,e,0);
-        }
+                MessageBox.Show(LoadForm.TextList[82]);
 
-        //限制销售价格文本输入，不允许负数
-        private void sell_price_txb_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            LoadForm.LimitInput(sender, e, 0);
-        }
+                //设置goods表自增的主键id从0开始(实际值为当前最大值加1)
+                sql = ("alter table goods auto_increment = 0");
+                cmd = new MySqlCommand(sql, conn);
+                cmd.ExecuteScalar();
 
-        //限制采购价格文本输入，不允许负数
-        private void purchase_price_txb_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            LoadForm.LimitInput(sender, e, 0);
+                //调用父窗口的查询方法，刷新商品列表
+                sql = "SELECT g.id, g.`name`, g.type, g.stock_num, g.sold_num, g.sell_price, g.purchase_price, g.stock_time, s.`name` as sName FROM goods as g, supplier as s WHERE g.supplier_id = s.id";
+                GoodsList goodsList = (GoodsList)this.Owner;
+                goodsList.goods_list_ltv.Items.Clear();
+                goodsList.SelectGoods(sql);
+                goodsList.Show();
+                this.Dispose();
+            }
         }
     }
 }
